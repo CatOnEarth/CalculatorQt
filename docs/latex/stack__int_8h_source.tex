@@ -1,0 +1,50 @@
+\hypertarget{stack__int_8h_source}{}\doxysection{stack\+\_\+int.\+h}
+\mbox{\hyperlink{stack__int_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00002}00002 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <qstring.h>}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00006}\mbox{\hyperlink{structnode}{00006}} \textcolor{keyword}{struct }\mbox{\hyperlink{structnode}{node}} \{}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00007}\mbox{\hyperlink{structnode_a919dd3b659ac73176cd49dad2d54aa2b}{00007}}     QString \mbox{\hyperlink{structnode_a919dd3b659ac73176cd49dad2d54aa2b}{value}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00008}\mbox{\hyperlink{structnode_a2a6a75dd1a3224be152f121f87720e0e}{00008}}     \mbox{\hyperlink{structnode}{node}}* \mbox{\hyperlink{structnode_a2a6a75dd1a3224be152f121f87720e0e}{prev}} = NULL;}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00009}\mbox{\hyperlink{structnode_a8b21483a38d8da3dd9d9025ab60d6cf1}{00009}}     \mbox{\hyperlink{structnode_a8b21483a38d8da3dd9d9025ab60d6cf1}{node}}(QString val, \mbox{\hyperlink{structnode}{node}}* prv) : \mbox{\hyperlink{structnode_a919dd3b659ac73176cd49dad2d54aa2b}{value}}(val), \mbox{\hyperlink{structnode_a2a6a75dd1a3224be152f121f87720e0e}{prev}}(prv) \{\}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00010}00010 \};}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00012}\mbox{\hyperlink{structstack}{00012}} \textcolor{keyword}{struct }\mbox{\hyperlink{structstack}{stack}} \{}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00013}\mbox{\hyperlink{structstack_a5688b35c5b48b3c0fd8e525763251c3f}{00013}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{structstack_a5688b35c5b48b3c0fd8e525763251c3f}{\_size}} = 0;}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00014}\mbox{\hyperlink{structstack_a60e5057848220087be0abebe9e67081f}{00014}}     \mbox{\hyperlink{structnode}{node}}* \mbox{\hyperlink{structstack_a60e5057848220087be0abebe9e67081f}{elem}} = NULL;}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00016}\mbox{\hyperlink{structstack_ab82998ddf393146c6064583cfc4c78bd}{00016}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{structstack_ab82998ddf393146c6064583cfc4c78bd}{push}}(QString \mbox{\hyperlink{stack__tokens_8h_af5fd84d0a334d98a7c175abd5c3ef5d5a25361924f30bae15bbbc3346daaab6d8}{num}}) \{}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00017}00017         \mbox{\hyperlink{structstack_a60e5057848220087be0abebe9e67081f}{elem}} = \textcolor{keyword}{new} \mbox{\hyperlink{structnode}{node}}(\mbox{\hyperlink{stack__tokens_8h_af5fd84d0a334d98a7c175abd5c3ef5d5a25361924f30bae15bbbc3346daaab6d8}{num}}, \mbox{\hyperlink{structstack_a60e5057848220087be0abebe9e67081f}{elem}});}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00018}00018         \mbox{\hyperlink{structstack_a5688b35c5b48b3c0fd8e525763251c3f}{\_size}}++;}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00019}00019     \}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00021}\mbox{\hyperlink{structstack_ae2b765925ce2028ffdbeecc63b49cd3b}{00021}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structstack_ae2b765925ce2028ffdbeecc63b49cd3b}{empty}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00022}00022         \textcolor{keywordflow}{return} \mbox{\hyperlink{structstack_a5688b35c5b48b3c0fd8e525763251c3f}{\_size}} == 0;}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00023}00023     \}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00025}\mbox{\hyperlink{structstack_ac4382a74f8177c3833963e8fea218f58}{00025}}     QString \mbox{\hyperlink{structstack_ac4382a74f8177c3833963e8fea218f58}{pop}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00026}00026         \mbox{\hyperlink{structnode}{node}}* prev = \mbox{\hyperlink{structstack_a60e5057848220087be0abebe9e67081f}{elem}}-\/>\mbox{\hyperlink{structnode_a2a6a75dd1a3224be152f121f87720e0e}{prev}};}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00027}00027         QString elemVal = \mbox{\hyperlink{structstack_a60e5057848220087be0abebe9e67081f}{elem}}-\/>\mbox{\hyperlink{structnode_a919dd3b659ac73176cd49dad2d54aa2b}{value}};}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00028}00028         \textcolor{keyword}{delete} \mbox{\hyperlink{structstack_a60e5057848220087be0abebe9e67081f}{elem}};}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00029}00029         \mbox{\hyperlink{structstack_a60e5057848220087be0abebe9e67081f}{elem}} = prev;}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00030}00030         -\/-\/\mbox{\hyperlink{structstack_a5688b35c5b48b3c0fd8e525763251c3f}{\_size}};}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00031}00031         \textcolor{keywordflow}{return} elemVal;}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00034}\mbox{\hyperlink{structstack_afd4d4f720b287d4d83d53013d6730b31}{00034}}     QString \mbox{\hyperlink{structstack_afd4d4f720b287d4d83d53013d6730b31}{back}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00035}00035         \textcolor{keywordflow}{return} \mbox{\hyperlink{structstack_a60e5057848220087be0abebe9e67081f}{elem}}-\/>\mbox{\hyperlink{structnode_a919dd3b659ac73176cd49dad2d54aa2b}{value}};}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00038}\mbox{\hyperlink{structstack_a404ea7e4a7fb0ba490752b0c561f801d}{00038}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{structstack_a404ea7e4a7fb0ba490752b0c561f801d}{size}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00039}00039         \textcolor{keywordflow}{return} \mbox{\hyperlink{structstack_a5688b35c5b48b3c0fd8e525763251c3f}{\_size}};}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00040}00040     \}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00042}\mbox{\hyperlink{structstack_a5e6b651f0198164adaf31d68587c33c4}{00042}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{structstack_a5e6b651f0198164adaf31d68587c33c4}{clear}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00043}00043         \textcolor{keywordflow}{while} (!\mbox{\hyperlink{structstack_ae2b765925ce2028ffdbeecc63b49cd3b}{empty}}()) \mbox{\hyperlink{structstack_ac4382a74f8177c3833963e8fea218f58}{pop}}();}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{stack__int_8h_source_l00045}00045 \};}
+
+\end{DoxyCode}

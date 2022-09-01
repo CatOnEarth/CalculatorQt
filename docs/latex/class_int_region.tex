@@ -1,0 +1,160 @@
+\hypertarget{class_int_region}{}\doxysection{Int\+Region\texorpdfstring{$<$}{<} T, U \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_int_region}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}
+
+
+{\ttfamily \#include $<$Safe\+Int.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda468213a7e9dcbc7a4382af2f366628a9}{Int\+Zone\+\_\+\+Uint\+LT32\+\_\+\+Uint\+LT32}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Unsigned \&\& Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+LT32\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda66b58601ebfb3cfea39a62b2ba5f30b2}{Int\+Zone\+\_\+\+Uint32\+\_\+\+Uint\+LT64}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Unsigned \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is32\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946ddae3eaad6a583fafca0454933966d826ec}{Int\+Zone\+\_\+\+Uint\+LT32\+\_\+\+Uint32}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Unsigned \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT32\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is32\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda65d44c9e8a625efc9c23069d065f53bc}{Int\+Zone\+\_\+\+Uint64\+\_\+\+Uint}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Unsigned \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is64\+Bit
+, \newline
+\mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946ddac040c9bcd309110e16651e5c488ccb64}{Int\+Zone\+\_\+\+Uint\+LT64\+\_\+\+Uint64}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Unsigned \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is64\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda47717b3b6f21fad9517be74a105007d3}{Int\+Zone\+\_\+\+Uint\+LT32\+\_\+\+Int\+LT32}} = !\+Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+LT32\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda269fd9b267e744fb1db9a5a797bc3bb2}{Int\+Zone\+\_\+\+Uint32\+\_\+\+Int\+LT64}} = Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Uint32 \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946ddad1f294831745c1c478ace4b5e272fe18}{Int\+Zone\+\_\+\+Uint\+LT32\+\_\+\+Int32}} = !\+Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT32\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Int32
+, \newline
+\mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda99673cc12d28506a8585983d0416253e}{Int\+Zone\+\_\+\+Uint64\+\_\+\+Int}} = Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Uint64 \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda024d1709404a6045f81d29d5fef8c796}{Int\+Zone\+\_\+\+Uint\+LT64\+\_\+\+Int64}} = !\+Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Int64
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda3e8faf0426e1fe1fed9d87058149611a}{Int\+Zone\+\_\+\+Uint64\+\_\+\+Int64}} = Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Uint64 \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Int64
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946ddac87409d93577a69ab4a10c6223403cee}{Int\+Zone\+\_\+\+Int\+LT32\+\_\+\+Int\+LT32}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Signed \&\& Safe\+Int\+Compare\texorpdfstring{$<$}{<} T, U \texorpdfstring{$>$}{>}\+::is\+Both\+LT32\+Bit
+, \newline
+\mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946ddae6c5710531cef03eded27a0a5263980f}{Int\+Zone\+\_\+\+Int32\+\_\+\+Int\+LT64}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is32\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda1ded6d71787bb6fd2eb7d7923ed7ddc7}{Int\+Zone\+\_\+\+Int\+LT32\+\_\+\+Int32}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT32\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is32\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946ddaa22e2f8eca3a01da971c1b707efedd51}{Int\+Zone\+\_\+\+Int64\+\_\+\+Int64}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Int64 \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Int64
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda6adaa63066172d82bd6dade6f69dfd92}{Int\+Zone\+\_\+\+Int64\+\_\+\+Int}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is64\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit
+, \newline
+\mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda76c144d5506dd9b3521f1f433015db40}{Int\+Zone\+\_\+\+Int\+LT64\+\_\+\+Int64}} = Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is64\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda596f28b599933209114df948c20a4c7d}{Int\+Zone\+\_\+\+Int\+LT32\+\_\+\+Uint\+LT32}} = Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Signed \&\& !\+Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Safe\+Int\+Compare\texorpdfstring{$<$}{<} T,U \texorpdfstring{$>$}{>}\+::is\+Both\+LT32\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda376015b5581fb0913fa76aef24a8a4c5}{Int\+Zone\+\_\+\+Int32\+\_\+\+Uint\+LT32}} = Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Int32 \&\& !\+Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+LT32\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda3e7ff173f418f63f421df594027da7c5}{Int\+Zone\+\_\+\+Int\+LT64\+\_\+\+Uint32}} = Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Uint32
+, \newline
+\mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda54bf952bb96ef543ef4c13aa16a58a55}{Int\+Zone\+\_\+\+Int64\+\_\+\+Uint\+LT64}} = Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Int64 \&\& !\+Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946ddae9d035e0ae0bc7d5a871674bc01c0987}{Int\+Zone\+\_\+\+Int\+\_\+\+Uint64}} = Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Uint64 \&\& Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit
+, \mbox{\hyperlink{class_int_region_a61ec04435e803e27cda348ffd5a946dda830d38c8a144901cc068ba448172468f}{Int\+Zone\+\_\+\+Int64\+\_\+\+Uint64}} = Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Int64 \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Uint64
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename U$>$\newline
+class Int\+Region$<$ T, U $>$}
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l00956}{956}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dd}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dd}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$typename T , typename U $>$ \\
+anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_UintLT32\_UintLT32@{IntZone\_UintLT32\_UintLT32}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_UintLT32\_UintLT32@{IntZone\_UintLT32\_UintLT32}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda468213a7e9dcbc7a4382af2f366628a9}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda468213a7e9dcbc7a4382af2f366628a9}} 
+Int\+Zone\+\_\+\+Uint\+LT32\+\_\+\+Uint\+LT32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Uint32\_UintLT64@{IntZone\_Uint32\_UintLT64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Uint32\_UintLT64@{IntZone\_Uint32\_UintLT64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda66b58601ebfb3cfea39a62b2ba5f30b2}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda66b58601ebfb3cfea39a62b2ba5f30b2}} 
+Int\+Zone\+\_\+\+Uint32\+\_\+\+Uint\+LT64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_UintLT32\_Uint32@{IntZone\_UintLT32\_Uint32}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_UintLT32\_Uint32@{IntZone\_UintLT32\_Uint32}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946ddae3eaad6a583fafca0454933966d826ec}\label{class_int_region_a61ec04435e803e27cda348ffd5a946ddae3eaad6a583fafca0454933966d826ec}} 
+Int\+Zone\+\_\+\+Uint\+LT32\+\_\+\+Uint32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Uint64\_Uint@{IntZone\_Uint64\_Uint}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Uint64\_Uint@{IntZone\_Uint64\_Uint}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda65d44c9e8a625efc9c23069d065f53bc}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda65d44c9e8a625efc9c23069d065f53bc}} 
+Int\+Zone\+\_\+\+Uint64\+\_\+\+Uint&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_UintLT64\_Uint64@{IntZone\_UintLT64\_Uint64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_UintLT64\_Uint64@{IntZone\_UintLT64\_Uint64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946ddac040c9bcd309110e16651e5c488ccb64}\label{class_int_region_a61ec04435e803e27cda348ffd5a946ddac040c9bcd309110e16651e5c488ccb64}} 
+Int\+Zone\+\_\+\+Uint\+LT64\+\_\+\+Uint64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_UintLT32\_IntLT32@{IntZone\_UintLT32\_IntLT32}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_UintLT32\_IntLT32@{IntZone\_UintLT32\_IntLT32}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda47717b3b6f21fad9517be74a105007d3}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda47717b3b6f21fad9517be74a105007d3}} 
+Int\+Zone\+\_\+\+Uint\+LT32\+\_\+\+Int\+LT32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Uint32\_IntLT64@{IntZone\_Uint32\_IntLT64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Uint32\_IntLT64@{IntZone\_Uint32\_IntLT64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda269fd9b267e744fb1db9a5a797bc3bb2}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda269fd9b267e744fb1db9a5a797bc3bb2}} 
+Int\+Zone\+\_\+\+Uint32\+\_\+\+Int\+LT64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_UintLT32\_Int32@{IntZone\_UintLT32\_Int32}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_UintLT32\_Int32@{IntZone\_UintLT32\_Int32}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946ddad1f294831745c1c478ace4b5e272fe18}\label{class_int_region_a61ec04435e803e27cda348ffd5a946ddad1f294831745c1c478ace4b5e272fe18}} 
+Int\+Zone\+\_\+\+Uint\+LT32\+\_\+\+Int32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Uint64\_Int@{IntZone\_Uint64\_Int}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Uint64\_Int@{IntZone\_Uint64\_Int}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda99673cc12d28506a8585983d0416253e}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda99673cc12d28506a8585983d0416253e}} 
+Int\+Zone\+\_\+\+Uint64\+\_\+\+Int&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_UintLT64\_Int64@{IntZone\_UintLT64\_Int64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_UintLT64\_Int64@{IntZone\_UintLT64\_Int64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda024d1709404a6045f81d29d5fef8c796}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda024d1709404a6045f81d29d5fef8c796}} 
+Int\+Zone\+\_\+\+Uint\+LT64\+\_\+\+Int64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Uint64\_Int64@{IntZone\_Uint64\_Int64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Uint64\_Int64@{IntZone\_Uint64\_Int64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda3e8faf0426e1fe1fed9d87058149611a}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda3e8faf0426e1fe1fed9d87058149611a}} 
+Int\+Zone\+\_\+\+Uint64\+\_\+\+Int64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_IntLT32\_IntLT32@{IntZone\_IntLT32\_IntLT32}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_IntLT32\_IntLT32@{IntZone\_IntLT32\_IntLT32}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946ddac87409d93577a69ab4a10c6223403cee}\label{class_int_region_a61ec04435e803e27cda348ffd5a946ddac87409d93577a69ab4a10c6223403cee}} 
+Int\+Zone\+\_\+\+Int\+LT32\+\_\+\+Int\+LT32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Int32\_IntLT64@{IntZone\_Int32\_IntLT64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Int32\_IntLT64@{IntZone\_Int32\_IntLT64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946ddae6c5710531cef03eded27a0a5263980f}\label{class_int_region_a61ec04435e803e27cda348ffd5a946ddae6c5710531cef03eded27a0a5263980f}} 
+Int\+Zone\+\_\+\+Int32\+\_\+\+Int\+LT64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_IntLT32\_Int32@{IntZone\_IntLT32\_Int32}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_IntLT32\_Int32@{IntZone\_IntLT32\_Int32}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda1ded6d71787bb6fd2eb7d7923ed7ddc7}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda1ded6d71787bb6fd2eb7d7923ed7ddc7}} 
+Int\+Zone\+\_\+\+Int\+LT32\+\_\+\+Int32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Int64\_Int64@{IntZone\_Int64\_Int64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Int64\_Int64@{IntZone\_Int64\_Int64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946ddaa22e2f8eca3a01da971c1b707efedd51}\label{class_int_region_a61ec04435e803e27cda348ffd5a946ddaa22e2f8eca3a01da971c1b707efedd51}} 
+Int\+Zone\+\_\+\+Int64\+\_\+\+Int64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Int64\_Int@{IntZone\_Int64\_Int}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Int64\_Int@{IntZone\_Int64\_Int}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda6adaa63066172d82bd6dade6f69dfd92}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda6adaa63066172d82bd6dade6f69dfd92}} 
+Int\+Zone\+\_\+\+Int64\+\_\+\+Int&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_IntLT64\_Int64@{IntZone\_IntLT64\_Int64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_IntLT64\_Int64@{IntZone\_IntLT64\_Int64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda76c144d5506dd9b3521f1f433015db40}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda76c144d5506dd9b3521f1f433015db40}} 
+Int\+Zone\+\_\+\+Int\+LT64\+\_\+\+Int64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_IntLT32\_UintLT32@{IntZone\_IntLT32\_UintLT32}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_IntLT32\_UintLT32@{IntZone\_IntLT32\_UintLT32}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda596f28b599933209114df948c20a4c7d}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda596f28b599933209114df948c20a4c7d}} 
+Int\+Zone\+\_\+\+Int\+LT32\+\_\+\+Uint\+LT32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Int32\_UintLT32@{IntZone\_Int32\_UintLT32}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Int32\_UintLT32@{IntZone\_Int32\_UintLT32}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda376015b5581fb0913fa76aef24a8a4c5}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda376015b5581fb0913fa76aef24a8a4c5}} 
+Int\+Zone\+\_\+\+Int32\+\_\+\+Uint\+LT32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_IntLT64\_Uint32@{IntZone\_IntLT64\_Uint32}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_IntLT64\_Uint32@{IntZone\_IntLT64\_Uint32}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda3e7ff173f418f63f421df594027da7c5}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda3e7ff173f418f63f421df594027da7c5}} 
+Int\+Zone\+\_\+\+Int\+LT64\+\_\+\+Uint32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Int64\_UintLT64@{IntZone\_Int64\_UintLT64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Int64\_UintLT64@{IntZone\_Int64\_UintLT64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda54bf952bb96ef543ef4c13aa16a58a55}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda54bf952bb96ef543ef4c13aa16a58a55}} 
+Int\+Zone\+\_\+\+Int64\+\_\+\+Uint\+LT64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Int\_Uint64@{IntZone\_Int\_Uint64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Int\_Uint64@{IntZone\_Int\_Uint64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946ddae9d035e0ae0bc7d5a871674bc01c0987}\label{class_int_region_a61ec04435e803e27cda348ffd5a946ddae9d035e0ae0bc7d5a871674bc01c0987}} 
+Int\+Zone\+\_\+\+Int\+\_\+\+Uint64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IntZone\_Int64\_Uint64@{IntZone\_Int64\_Uint64}!IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}}\index{IntRegion$<$ T, U $>$@{IntRegion$<$ T, U $>$}!IntZone\_Int64\_Uint64@{IntZone\_Int64\_Uint64}}}\mbox{\Hypertarget{class_int_region_a61ec04435e803e27cda348ffd5a946dda830d38c8a144901cc068ba448172468f}\label{class_int_region_a61ec04435e803e27cda348ffd5a946dda830d38c8a144901cc068ba448172468f}} 
+Int\+Zone\+\_\+\+Int64\+\_\+\+Uint64&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l00959}{959}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_safe_int_8h}{Safe\+Int.\+h}}\end{DoxyCompactItemize}

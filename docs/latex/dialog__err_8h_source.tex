@@ -1,0 +1,88 @@
+\hypertarget{dialog__err_8h_source}{}\doxysection{dialog\+\_\+err.\+h}
+\mbox{\hyperlink{dialog__err_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef DIALOG\_ERR\_H}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00002}00002 \textcolor{preprocessor}{\#define DIALOG\_ERR\_H}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00007}00007 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00009}00009 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00010}00010 \textcolor{keyword}{class }\mbox{\hyperlink{class_dialog__err}{Dialog\_err}};}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00013}\mbox{\hyperlink{class_dialog__err}{00013}} \textcolor{keyword}{class }\mbox{\hyperlink{class_dialog__err}{Dialog\_err}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00015}00015     Q\_OBJECT}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00017}00017 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00018}00018     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_dialog__err_a7476ad46280796ed0bcd43e5d83b0aa3}{Dialog\_err}}(\textcolor{keywordtype}{int} num\_err, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00019}00019     \mbox{\hyperlink{class_dialog__err_a9dc599fdd1b4d2fe9bf9837b58e76143}{\string~Dialog\_err}}();}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00021}00021 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00022}00022     QString error;}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00023}00023     \mbox{\hyperlink{class_ui_1_1_dialog__err}{Ui::Dialog\_err}} *ui;}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00026}00026     }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00027}00027     \textcolor{comment}{// мат ошибки}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00028}00028     std::vector<string> err\_math;}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00029}00029     \textcolor{keywordtype}{void} inizialize\_err\_math() \{}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00030}00030         err\_math.push\_back(\textcolor{stringliteral}{"{}error math"{}});}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00031}00031         err\_math.push\_back(ERROR\_DIVIDE\_NULL);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00032}00032         err\_math.push\_back(ERROR\_DIVIDE\_MYLONG\_TO\_FRACTIONAL);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00033}00033         err\_math.push\_back(ERROR\_DIVIDE\_FRACTIONAL\_TO\_MYLONG);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00034}00034         err\_math.push\_back(ERROR\_TRUGONOMETRIC\_FUNCTION);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00035}00035         err\_math.push\_back(ERROR\_WHILE\_POW\_GET\_MYLONG);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00036}00036         err\_math.push\_back(ERROR\_ODZ\_LOG\_BASE\_1);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00037}00037         err\_math.push\_back(ERROR\_ODZ\_LOG\_BASE\_0);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00038}00038         err\_math.push\_back(ERROR\_ODZ\_LOG\_NUMBER);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00039}00039         err\_math.push\_back(ERROR\_LOG\_MYLONG);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00040}00040         err\_math.push\_back(ERROR\_DEGREE\_MYLONG);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00041}00041         err\_math.push\_back(ERROR\_DEGREE\_ODZ);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00042}00042         err\_math.push\_back(ERROR\_DOUBLE\_BALANCE);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00043}00043         err\_math.push\_back(ERROR\_DEGREE\_MINUS\_MYLONG);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00046}00046      \textcolor{keywordtype}{string} ERROR\_DIVIDE\_NULL = u8\textcolor{stringliteral}{"{}Делить на ноль запрещено математикой"{}}; \textcolor{comment}{//   101}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00047}00047      \textcolor{keywordtype}{string} ERROR\_DIVIDE\_MYLONG\_TO\_FRACTIONAL = u8\textcolor{stringliteral}{"{}Нельзя делить длинное число на дробное"{}}; \textcolor{comment}{//  102}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00048}00048      \textcolor{keywordtype}{string} ERROR\_DIVIDE\_FRACTIONAL\_TO\_MYLONG = u8\textcolor{stringliteral}{"{}Нельзя делить дробное число на длинное"{}}; \textcolor{comment}{//  103}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00049}00049      \textcolor{keywordtype}{string} ERROR\_TRUGONOMETRIC\_FUNCTION = u8\textcolor{stringliteral}{"{}Нельзя считать тригонометрические функции от длинного числа"{}}; \textcolor{comment}{//  104}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00050}00050      \textcolor{keywordtype}{string} ERROR\_WHILE\_POW\_GET\_MYLONG = u8\textcolor{stringliteral}{"{}При возведении в степень получилось длинное число"{}}; \textcolor{comment}{//  105}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00051}00051      \textcolor{keywordtype}{string} ERROR\_ODZ\_LOG\_BASE\_1 = u8\textcolor{stringliteral}{"{}Основание логарифма не может быть 1"{}}; \textcolor{comment}{//  106}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00052}00052      \textcolor{keywordtype}{string} ERROR\_ODZ\_LOG\_BASE\_0 = u8\textcolor{stringliteral}{"{}Основание логарифма не может быть 0"{}};\textcolor{comment}{//  107}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00053}00053      \textcolor{keywordtype}{string} ERROR\_ODZ\_LOG\_NUMBER = u8\textcolor{stringliteral}{"{}Под знаком логарифма должно быть число больше 0"{}}; \textcolor{comment}{//  108}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00054}00054      \textcolor{keywordtype}{string} ERROR\_LOG\_MYLONG = u8\textcolor{stringliteral}{"{}Нельзя считать логарифм от длинного числа"{}}; \textcolor{comment}{//  109}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00055}00055      \textcolor{keywordtype}{string} ERROR\_DEGREE\_MYLONG = u8\textcolor{stringliteral}{"{}Нельзя возводить в длинную степень!"{}}; \textcolor{comment}{//  110}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00056}00056      \textcolor{keywordtype}{string} ERROR\_DEGREE\_ODZ = u8\textcolor{stringliteral}{"{}Нельзя возводить в дробную степень отрицательное число!"{}}; \textcolor{comment}{//  111}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00057}00057      \textcolor{keywordtype}{string} ERROR\_DOUBLE\_BALANCE = u8\textcolor{stringliteral}{"{}Нельзя брать остаток от деления от дробного числа"{}}; \textcolor{comment}{//  112}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00058}00058      \textcolor{keywordtype}{string} ERROR\_DEGREE\_MINUS\_MYLONG = u8\textcolor{stringliteral}{"{}Нельзя возводить длинное число в отрицательную степень"{}}; \textcolor{comment}{// 113}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00059}00059      }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00060}00060     \textcolor{comment}{// ошибки разбора}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00062}00062     std::vector<string> err\_cutexpression;}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00063}00063     \textcolor{keywordtype}{void} inizialize\_err\_curexpr() \{}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00064}00064         err\_cutexpression.push\_back(\textcolor{stringliteral}{"{}error cutexpresion"{}});}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00065}00065         err\_cutexpression.push\_back(ERROR\_INCORRECT\_START\_NULL\_NUMBER); \textcolor{comment}{// 1}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00066}00066         err\_cutexpression.push\_back(ERROR\_INCORRECT\_PLACEMENT\_OF\_SEPARATORS\_IN\_NUMBER); \textcolor{comment}{// 2}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00067}00067         err\_cutexpression.push\_back(ERROR\_INCORRECT\_SYMBOL); \textcolor{comment}{// 3}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00068}00068         err\_cutexpression.push\_back(ERROR\_INCORRECT\_PLACEMENT\_OF\_PARENTHESES); \textcolor{comment}{// 4}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00069}00069         err\_cutexpression.push\_back(ERROR\_CHECK\_LOG); \textcolor{comment}{// 5}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00070}00070         err\_cutexpression.push\_back(ERROR\_INCORRECT\_END\_OF\_EXPRESSION); \textcolor{comment}{// 6}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00071}00071         err\_cutexpression.push\_back(ERROR\_INCORRECT\_SYMBOL\_BEFORE\_NUMBER); \textcolor{comment}{// 7}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00074}00074      \textcolor{keywordtype}{string} ERROR\_INCORRECT\_END\_OF\_EXPRESSION = u8\textcolor{stringliteral}{"{}Неверный конец выражения"{}}; \textcolor{comment}{// 6}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00075}00075      \textcolor{keywordtype}{string} ERROR\_CHECK\_LOG = u8\textcolor{stringliteral}{"{}Проверьте правильность введенного логарифма"{}}; \textcolor{comment}{// 5}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00076}00076      \textcolor{keywordtype}{string} ERROR\_INCORRECT\_SYMBOL = u8\textcolor{stringliteral}{"{}Встречен неожиданный символ: "{}}; \textcolor{comment}{// 3}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00077}00077      \textcolor{keywordtype}{string} ERROR\_INCORRECT\_PLACEMENT\_OF\_PARENTHESES = u8\textcolor{stringliteral}{"{}Проверьте правильность расстановки скобок"{}}; \textcolor{comment}{// 4}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00078}00078      \textcolor{keywordtype}{string} ERROR\_INCORRECT\_PLACEMENT\_OF\_SEPARATORS\_IN\_NUMBER = u8\textcolor{stringliteral}{"{}Вcтречено более одного разделителя в десятичном числе"{}}; \textcolor{comment}{// 2}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00079}00079      \textcolor{keywordtype}{string} ERROR\_INCORRECT\_SYMBOL\_BEFORE\_NUMBER = u8\textcolor{stringliteral}{"{}Встречен неожиданный знак перед числом"{}}; \textcolor{comment}{// 7}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00080}00080      \textcolor{keywordtype}{string} ERROR\_INCORRECT\_START\_NULL\_NUMBER = u8\textcolor{stringliteral}{"{}Число не может начинаться с ведущего нуля, кроме десятичного числа с нулевой целой частью"{}}; \textcolor{comment}{// 1}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00081}00081 \};}
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8h_source_l00083}00083 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DIALOG\_ERR\_H}}
+
+\end{DoxyCode}

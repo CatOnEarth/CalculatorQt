@@ -1,0 +1,75 @@
+\hypertarget{checkinputcorrection_8cpp_source}{}\doxysection{checkinputcorrection.\+cpp}
+\mbox{\hyperlink{checkinputcorrection_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{checkinputcorrection_8h}{checkinputcorrection.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00003}\mbox{\hyperlink{class_check_input_correction_acc477f4177450696e46db56840205ab0}{00003}} \mbox{\hyperlink{class_check_input_correction_acc477f4177450696e46db56840205ab0}{CheckInputCorrection::CheckInputCorrection}}()}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00004}00004 \{}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00008}\mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0}{00008}} \textcolor{keyword}{enum} \mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0}{Example}}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00010}\mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a13d000b4d7dc70d90239b7430d1eb6b2}{00010}}     \mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a13d000b4d7dc70d90239b7430d1eb6b2}{START}},}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00011}\mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a12a90dfe20486bbe3e075afcd19ef2d0}{00011}}     \mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a12a90dfe20486bbe3e075afcd19ef2d0}{NUMBER}},}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00012}\mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a682bff09ecd13e855c20beeea7f234f8}{00012}}     \mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a682bff09ecd13e855c20beeea7f234f8}{SIGN}},}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00013}\mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a389e03ce61ac2d93fd54069187ab58af}{00013}}     \mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a389e03ce61ac2d93fd54069187ab58af}{FUNC}},}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00014}\mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a3869e760dddaf60e4d78f7ed0af1a49f}{00014}}     \mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0a3869e760dddaf60e4d78f7ed0af1a49f}{PARENTHESIS\_OPEN}},}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00015}\mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0af3c4677fe9e4ed4abcbd25f1c6f240ef}{00015}}     \mbox{\hyperlink{checkinputcorrection_8cpp_a265b410d1a5c4b6ff19219879314e8a0af3c4677fe9e4ed4abcbd25f1c6f240ef}{PARENTHESIS\_CLOSE}},}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00016}00016 \};}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00018}\mbox{\hyperlink{class_check_input_correction_a9d0b8115831d2dd858d590b9e10192f3}{00018}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_check_input_correction_a9d0b8115831d2dd858d590b9e10192f3}{CheckInputCorrection::check\_correct\_expression}}(QString expr) \{}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00019}00019     \textcolor{keywordtype}{bool} ans = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00020}00020     QString elem\_now;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00021}00021     QChar current\_elem;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00022}00022     \textcolor{keywordtype}{bool} flag\_first\_minus = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00023}00023     \mbox{\hyperlink{classstack__qstring}{stack\_qstring}} stack\_operations;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00025}00025     set<QString> operations;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00026}00026     operations.insert(\textcolor{stringliteral}{"{}*"{}});}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00027}00027     operations.insert(\textcolor{stringliteral}{"{}/"{}});}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00028}00028     operations.insert(\textcolor{stringliteral}{"{}+"{}});}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00029}00029     operations.insert(\textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00031}00031     map<QString, int> priority\_operations;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00032}00032     priority\_operations[\textcolor{stringliteral}{"{}*"{}}] = 20;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00033}00033     priority\_operations[\textcolor{stringliteral}{"{}/"{}}] = 20;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00034}00034     priority\_operations[\textcolor{stringliteral}{"{}+"{}}] = 10;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00035}00035     priority\_operations[\textcolor{stringliteral}{"{}-\/"{}}] = 10;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00036}00036     priority\_operations[\textcolor{stringliteral}{"{}("{}}] = 5;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00037}00037     priority\_operations[\textcolor{stringliteral}{"{}["{}}] = 4;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00039}00039     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0; ii < expr.length(); ++ii) \{}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00040}00040         elem\_now = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00041}00041         }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00042}00042         \textcolor{keywordflow}{if} (ii = 0 \&\& expr[ii] == \textcolor{stringliteral}{"{}-\/"{}}) \{}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00043}00043             flag\_first\_minus = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00044}00044         \}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00045}00045         current\_elem = expr[ii];}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00047}00047         \textcolor{keywordflow}{if} (current\_elem.isDigit()) \{ }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00048}00048             \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}0"{}}) \{ \textcolor{comment}{// проверка если число с нуля начинается}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00049}00049                 \textcolor{keywordflow}{if} (ii + 1 < expr.length()) \{}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00050}00050                     \textcolor{keywordflow}{if} (expr[ii + 1] != \textcolor{stringliteral}{"{},"{}} \&\& expr[ii + 1] != \textcolor{stringliteral}{"{}."{}}) \{}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00051}00051                         \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}ошибка. число не может начинаться с ведущего нуля, кроме случая с нулевой целой частью десятичнго числа"{}};}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00052}00052                     \}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00053}00053                 \}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00054}00054             \}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00056}00056             \textcolor{keywordtype}{int} count\_separators = 0;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00057}00057             \textcolor{keywordflow}{for} (; count\_separators <= 1 \&\& ii < expr.length() \&\& expr[ii+1].isDigit(); ++ii, current\_elem = expr[ii]) \{ \textcolor{comment}{// проверка количество точек и запятых в числе}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00058}00058                 elem\_now += current\_elem;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00059}00059                 \textcolor{keywordflow}{if} (current\_elem == \textcolor{charliteral}{','} || current\_elem == \textcolor{charliteral}{'.'}) \{}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00060}00060                     ++count\_separators;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00061}00061                 \} }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00062}00062             \}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00063}00063             \textcolor{keywordflow}{if} (count\_separators >= 2) \{}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00064}00064                 \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}ошибка. ввод числа с одним и более разделителем дробной части"{}};}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00065}00065             \}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00066}00066         \}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00068}00068     \textcolor{keywordflow}{return} ans;}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{checkinputcorrection_8cpp_source_l00070}00070 \}}
+
+\end{DoxyCode}

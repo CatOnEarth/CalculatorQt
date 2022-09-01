@@ -1,0 +1,44 @@
+\hypertarget{inputexpressionclass_8cpp_source}{}\doxysection{inputexpressionclass.\+cpp}
+\mbox{\hyperlink{inputexpressionclass_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{inputexpressionclass_8h}{inputexpressionclass.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00003}\mbox{\hyperlink{class_input_expression_class_af6c9f019940c06bfb3156fea8809178f}{00003}} \mbox{\hyperlink{class_input_expression_class_af6c9f019940c06bfb3156fea8809178f}{InputExpressionClass::InputExpressionClass}}()}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00004}00004 \{}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00008}\mbox{\hyperlink{class_input_expression_class_a9b8a9168496a13434cd600ff6de0ba2f}{00008}} \textcolor{keywordtype}{long} \textcolor{keywordtype}{long} \mbox{\hyperlink{class_input_expression_class_a9b8a9168496a13434cd600ff6de0ba2f}{InputExpressionClass::getLength\_expression}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00009}00009 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00010}00010     \textcolor{keywordflow}{return} length\_expression;}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00013}\mbox{\hyperlink{class_input_expression_class_ac27ef761bb1c9c47b06aeb4e47f9964f}{00013}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_input_expression_class_ac27ef761bb1c9c47b06aeb4e47f9964f}{InputExpressionClass::setLength\_expression}}(\textcolor{keywordtype}{long} \textcolor{keywordtype}{long} value)}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00015}00015     length\_expression = value;}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00016}00016 \}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00018}\mbox{\hyperlink{class_input_expression_class_a911925b7ae92db92dc80d433c024e099}{00018}} QString \mbox{\hyperlink{class_input_expression_class_a911925b7ae92db92dc80d433c024e099}{InputExpressionClass::getInput\_expression}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00019}00019 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00020}00020     \textcolor{keywordflow}{return} input\_expression;}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00021}00021 \}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00023}\mbox{\hyperlink{class_input_expression_class_a61852703626ac141b875cdc726e5e281}{00023}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_input_expression_class_a61852703626ac141b875cdc726e5e281}{InputExpressionClass::setInput\_expression}}(\textcolor{keyword}{const} QString \&value)}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00024}00024 \{}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00025}00025     input\_expression = value;}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00026}00026     length\_expression = value.size();}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00029}\mbox{\hyperlink{class_input_expression_class_a09d54277543d9d8d2e81643a412c1002}{00029}} \mbox{\hyperlink{inputexpressionclass_8h_aa8f137f19095e0bdcf4f521e901f88bb}{Operation}} \mbox{\hyperlink{class_input_expression_class_a09d54277543d9d8d2e81643a412c1002}{InputExpressionClass::getCurrent\_operation}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00030}00030 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00031}00031     \textcolor{keywordflow}{return} current\_operation;}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00032}00032 \}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00034}\mbox{\hyperlink{class_input_expression_class_a2ca6e2a83ccafea4a83d251f911fc1d2}{00034}} QString \mbox{\hyperlink{class_input_expression_class_a2ca6e2a83ccafea4a83d251f911fc1d2}{InputExpressionClass::getResult}}() \{}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00035}00035     \textcolor{comment}{//stack }}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00036}00036     QString ans;}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00037}00037     \textcolor{keywordflow}{return} ans;}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00038}00038 \}}
+\DoxyCodeLine{\Hypertarget{inputexpressionclass_8cpp_source_l00039}00039 }
+
+\end{DoxyCode}

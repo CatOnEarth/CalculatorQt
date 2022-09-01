@@ -1,0 +1,32 @@
+\hypertarget{dialog__err_8cpp_source}{}\doxysection{dialog\+\_\+err.\+cpp}
+\mbox{\hyperlink{dialog__err_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{dialog__err_8h}{dialog\_err.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ui__dialog__err_8h}{ui\_dialog\_err.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00004}\mbox{\hyperlink{class_dialog__err_a7476ad46280796ed0bcd43e5d83b0aa3}{00004}} \mbox{\hyperlink{class_dialog__err_a7476ad46280796ed0bcd43e5d83b0aa3}{Dialog\_err::Dialog\_err}}(\textcolor{keywordtype}{int} err\_, QWidget *parent) :}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00005}00005     QDialog(parent),}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00006}00006     ui(new \mbox{\hyperlink{namespace_ui}{Ui}}::\mbox{\hyperlink{class_dialog__err}{Dialog\_err}})}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00008}00008     QString err\_text;}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00009}00009     \textcolor{keywordflow}{if} (err\_ < 100) \{}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00010}00010         inizialize\_err\_curexpr();}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00011}00011         err\_text = QString::fromStdString(err\_cutexpression[err\_]);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00012}00012     \}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00013}00013     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( err\_ > 100 \&\& err\_ < 200)\{}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00014}00014         inizialize\_err\_math();}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00015}00015         err\_text = QString::fromStdString(err\_math[err\_ -\/ 100]);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00016}00016     \}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00017}00017     QLocale::setDefault(QLocale(\textcolor{stringliteral}{"{}ru\_RU"{}}));}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00018}00018     ui-\/>\mbox{\hyperlink{class_ui___dialog__err_ad836f2a8915b719712e72cc21f1aea70}{setupUi}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00019}00019     ui-\/>\mbox{\hyperlink{class_ui___dialog__err_a0de4887467480e6bd9ea506549480095}{label\_text\_error}}-\/>setWordWrap(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00020}00020     ui-\/>\mbox{\hyperlink{class_ui___dialog__err_a0de4887467480e6bd9ea506549480095}{label\_text\_error}}-\/>setText(err\_text);}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00021}00021     }
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00022}00022 \}}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00024}\mbox{\hyperlink{class_dialog__err_a9dc599fdd1b4d2fe9bf9837b58e76143}{00024}} \mbox{\hyperlink{class_dialog__err_a9dc599fdd1b4d2fe9bf9837b58e76143}{Dialog\_err::\string~Dialog\_err}}()}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00025}00025 \{}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00026}00026     \textcolor{keyword}{delete} ui;}
+\DoxyCodeLine{\Hypertarget{dialog__err_8cpp_source_l00027}00027 \}}
+
+\end{DoxyCode}

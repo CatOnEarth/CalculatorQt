@@ -1,0 +1,60 @@
+\hypertarget{make__operations_8h_source}{}\doxysection{make\+\_\+operations.\+h}
+\mbox{\hyperlink{make__operations_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef MAKE\_OPERATIONS\_H}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00002}00002 \textcolor{preprocessor}{\#define MAKE\_OPERATIONS\_H}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00004}\mbox{\hyperlink{make__operations_8h_ae71449b1cc6e6250b91f539153a7a0d3}{00004}} \textcolor{preprocessor}{\# define M\_PI 3.1415926535 }\textcolor{comment}{/* pi */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00005}\mbox{\hyperlink{make__operations_8h_a1cec5659f265f9084df99a29b8b7e811}{00005}} \textcolor{preprocessor}{\# define EULER\_NUMBER  2.7182818284  }\textcolor{comment}{/* e */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{stack__qstring_8h}{stack\_qstring.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <set>}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00010}00010 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_safe_int_8h}{SafeInt.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_big_int_8h}{BigInt.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00014}00014 \textcolor{preprocessor}{\#include <qlocale.h>}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00016}\mbox{\hyperlink{classmake__operations}{00016}} \textcolor{keyword}{class }\mbox{\hyperlink{classmake__operations}{make\_operations}}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00017}00017 \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00018}00018 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00019}00019     \mbox{\hyperlink{classmake__operations_ac88df8b582f176fd679320754dfdcfd9}{make\_operations}}(vector<QString>, map<QString, QString>);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00020}00020     \mbox{\hyperlink{classmake__operations_a93b7fab38b8dc77e6bb9baafec13268c}{\string~make\_operations}}();}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00022}00022     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmake__operations_ace19e9fabcc251587e34522f336146d7}{inizialize}}();}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00024}00024     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00025}\mbox{\hyperlink{classmake__operations_ae14146695a97607d0d0f8e0b8a0df3ea}{00025}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classmake__operations_ae14146695a97607d0d0f8e0b8a0df3ea}{is\_big\_number\_double}}(QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00027}00027     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmake__operations_a493735a55c9aac84e29e336efbca40dc}{distribution\_of\_operations}}();}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00028}00028     \textcolor{keywordtype}{long} \textcolor{keywordtype}{long} \mbox{\hyperlink{classmake__operations_a77ef63570f6612010a801b7105806ade}{count\_operations\_in\_expression}}();}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00030}00030     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmake__operations_a61539906d2abf3f22825de7b08b1cb38}{getResult}}();}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00032}\mbox{\hyperlink{classmake__operations_ab79efe9b1102a989f83fd1f8327e20b3}{00032}}     QString \mbox{\hyperlink{classmake__operations_ab79efe9b1102a989f83fd1f8327e20b3}{getStringResult}}() \{ \textcolor{keywordflow}{return} result\_operations; \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00034}00034 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00035}00035     vector<QString> vector\_expression;}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00036}00036     QString result\_operations = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00037}00037     vector<QString> operations;}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00038}00038     map<QString, QString> params;}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00040}00040     QString if\_plus(QString, QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00041}00041     QString if\_minus(QString, QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00042}00042     QString if\_multiply(QString, QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00043}00043     QString if\_divide(QString, QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00044}00044     QString if\_balance(QString, QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00045}00045     QString if\_sin(QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00046}00046     QString if\_cos(QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00047}00047     QString if\_degree(QString, QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00048}00048     QString if\_log(QString, QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00049}00049     QString if\_ln(QString);}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00051}00051     map<QString, double> CONSTANTS\_NUMBER;}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00053}00053 \};}
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{make__operations_8h_source_l00055}00055 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// MAKE\_OPERATIONS\_H}}
+
+\end{DoxyCode}

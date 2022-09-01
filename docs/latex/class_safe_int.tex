@@ -1,0 +1,1380 @@
+\hypertarget{class_safe_int}{}\doxysection{Safe\+Int\texorpdfstring{$<$}{<} T, E \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_safe_int}\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+
+
+{\ttfamily \#include $<$Safe\+Int.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9}{align\+Bits}} \{ \newline
+\mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ad6dffff8e22e584f41f85b56a23b248a}{align2}} = 1
+, \mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ae0c84c5771abfc7a7f7c6fb5bec04eba}{align4}} = 2
+, \mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9afd35a80900e0f0633f0274ab4417ec76}{align8}} = 3
+, \mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9a272f044fb3f6831124316bf9553575bd}{align16}} = 4
+, \newline
+\mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ad255b09128f29c7544da357cfc898b0e}{align32}} = 5
+, \mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9a0013f3fd4149a2c67bb777993a491e96}{align64}} = 6
+, \mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ad193c4af04d3bdbb6b0bbb7de0863fcf}{align128}} = 7
+, \mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9a51d50c907a8e284fb6d6efa8afc25818}{align256}} = 8
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_safe_int_a275cf26c84a73fb58023aea7c7066a2a}{Safe\+Int}} () \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a696a073188c50577fcfaa03133aec1e6}{Safe\+Int}} (const T \&i) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a40bab63afaac5359df9ef5deb8100e31}{Safe\+Int}} (bool b) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int_a2cdfe5ff7dd19fb1580e2dbc2ff8021c}{Safe\+Int}} (const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ \&u) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int_ac6799ef3c397ceeffc007cf7792b8053}{Safe\+Int}} (const U \&i) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a07829291b76e74cd81b87882d7c0a0ec}{operator=}} (const U \&rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a82d525a345cf34f3baf1ae83a95c0ffe}{operator=}} (const T \&rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a5cf94be60ed60fcc9b1d988de5006ddd}{operator=}} (const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ \&rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a99b84b20cef5cd7d9279802d645f36c9}{operator=}} (const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \&rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a28956fc96bed6ef8622a4fca20d9155a}{operator bool}} () const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_afd101c0db4978530e011281ce183294d}{operator char}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a9188afb9958364689cd0fe2ffcdd2034}{operator signed char}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a6f09942190f577446b4a859a5b71d30a}{operator unsigned char}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a047b627740f18d7cebf02763378046d6}{operator \+\_\+\+\_\+int16}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a34eedcef71a7ccafb3d9177df09f1a65}{operator unsigned \+\_\+\+\_\+int16}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a3f7298ba1acb29e9159d16a6b6ad8604}{operator \+\_\+\+\_\+int32}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a54aec23b3262c86c13b12956fceaee57}{operator unsigned \+\_\+\+\_\+int32}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a9f23a0e8901662eecce0db44d3cea6c6}{operator long}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a7bfcf0a8dee92f555f5b4868050740e1}{operator unsigned long}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a199b382cec226cea56e36f25e40ca489}{operator \+\_\+\+\_\+int64}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_aa8a1caa24e6c2b897d6cf447a10c7d3e}{operator unsigned \+\_\+\+\_\+int64}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a1405d7aa04c7e26f0ebd377a7df653ec}{operator float}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_a09521359d076a0f5336b0e334aaec62d}{operator double}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int_afd35d2dd00c289af0f79824f24913886}{operator long double}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+T $\ast$ \mbox{\hyperlink{class_safe_int_a4218e65225698fce8b8dcbe81defce5b}{Ptr}} () \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+const T $\ast$ \mbox{\hyperlink{class_safe_int_a070c372f820de3aeb9d8e9e091354735}{Ptr}} () const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+const T \& \mbox{\hyperlink{class_safe_int_aaddfca850a56f9ac12d72d98598c40ee}{Ref}} () const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+T $\ast$ \mbox{\hyperlink{class_safe_int_a072f90c625d4e64a879ed7d45ce3dbab}{operator\&}} () \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+const T $\ast$ \mbox{\hyperlink{class_safe_int_aeb50cdd8c9b04267fab13377f10fd8d1}{operator\&}} () const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+bool \mbox{\hyperlink{class_safe_int_aaeffebdbb10e7942ac2bffd105a51b94}{operator!}} () const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a2676f91fc7f32b099c75a9e43f7c59ae}{operator+}} () const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_aa5ec269f7200214ff51ac95fb4a94f22}{operator-\/}} () const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_afb52b56629bd34a610eac927b046bd4c}{operator++}} () \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a14ede8cbd2a4a59c727c0c94b3fbdbfa}{operator-\/-\/}} () \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a31879c26cf5c52e8645c9702876eb70f}{operator++}} (int) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_ab1187587496ca9fa3669cf05bdfa4aa0}{operator-\/-\/}} (int) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a29ac03df2a135ad8ce3f7027f96d941c}{operator$\sim$}} () const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a047668187ff78e71dbd5707ef3b8c6c6}{operator\%}} (U rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a0b8835842cf5d614cebffdc88d8bd74f}{operator\%}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a976dd3599bbad8df3bb789bedfb7c378}{operator\%=}} (U rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a788ab04ced7776d3c981edf0b364dd3b}{operator\%=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_ae48cda4bad4676fcdeae1abe6bdb2b5b}{operator$\ast$}} (U rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a205d342e8868d8dba949c013d9779e32}{operator$\ast$}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_ae07064150afc2c1aab64314203bf7a00}{operator$\ast$=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a80a84c46075eaa8981e2132440ba5892}{operator$\ast$=}} (U rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a4dc549cce12f2c5a9673bd18b6347913}{operator$\ast$=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a148c74c637748ceeb4e46baddd773d79}{operator/}} (U rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a1844fc48d302664763d9dc687894681d}{operator/}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a33f3bd32f4b78aef3c51daa0f6cf66f1}{operator/=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ i) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a068f2bc3925aeb0c4bb681bce08fa122}{operator/=}} (U i) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_ab7eb11cad6e8018bc791576bd5817e4c}{operator/=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ i)
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a107a7791d99c74381266431165f64d13}{operator+}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_ac5ae35bcbabe2427b58df28a3dc37d56}{operator+}} (U rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a0d628f7dd808c4ee57d1b6ca266a0811}{operator+=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a1117bbab4cb0e829edc7d5c843b09f52}{operator+=}} (U rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a7f2f052ae9ed9b1daab73f6153225109}{operator+=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a7032956275dc625e2d2c7b74e576bd91}{operator-\/}} (U rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_ababb3fa2b37107900bb059be9cc279c7}{operator-\/}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) const \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a2ced84ac087a3dc3a1e54099c18a6d3e}{operator-\/=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a5614761d8f947f34a8cf63d436c4d96a}{operator-\/=}} (U rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a463d14d8da32fc8cf461b2cf85b40505}{operator-\/=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a5eb8641aab2b7dfeada5d7b3559e8c47}{operator$<$$<$}} (U bits) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a78e86b2b30807042d1417bcb6a6041de}{operator$<$$<$}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ bits) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_acef95f6cd0ec6986f05904d4dd75be28}{operator$<$$<$=}} (U bits) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a7852bc920de11a1d36d3d4fe0bb98bcb}{operator$<$$<$=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ bits) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a2ab1f33bb89e51b4d63eec8ea7a3de10}{operator$>$$>$}} (U bits) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_ace489026216378b2345b211a41bde181}{operator$>$$>$}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ bits) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_aa013e1301516c1cb5767ba9555b6003f}{operator$>$$>$=}} (U bits) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_ab59e6eaf228c431acdc55c81cb9b0557}{operator$>$$>$=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ bits) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a4525231776d2cae4ae1d6befd04b83af}{operator\&}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a40fa5985eb189a062f40d7833237bc08}{operator\&}} (U rhs) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a8a7d600a345cb0e78a3542f3d234539f}{operator\&=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_afd3ae5670bd2832c6ae79ed462da938f}{operator\&=}} (U rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_aab830d65c672ecb0db3690da0466c0a4}{operator\&=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_ae14f8cecfa13d4e8d3336abb5c3f1f6c}{operator$^\wedge$}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a4f234e16de63cdbf1849bb0e177416b0}{operator$^\wedge$}} (U rhs) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a22af3577bc998834988283fa87c464c2}{operator$^\wedge$=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_acfca1abe927fe25c1832f51bc14b4b10}{operator$^\wedge$=}} (U rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a413bdc349a10e6d27e7382a4fac4bdd1}{operator$^\wedge$=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a668a55df2167ca4a5e98c765b3299e93}{operator$\vert$}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a45ddf64a6c3fcb2805ca5a860dca0ee6}{operator$\vert$}} (U rhs) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_ae73dfafc220f2edba98c94a67b6cdefc}{operator$\vert$=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a864ba29896ee65c9b765a559d10c3708}{operator$\vert$=}} (U rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_aeab76935855081965049b8ac0bd5c8af}{operator$\vert$=}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ rhs) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a6534d672667f2039010b8cf03f61bd46}{Min}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ test, const T floor=\mbox{\hyperlink{class_int_traits}{Int\+Traits}}$<$ T $>$\+::min\+Int) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a83bb82e1a424b359018d9748b5da8c22}{Max}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ test, const T upper=\mbox{\hyperlink{class_int_traits}{Int\+Traits}}$<$ T $>$\+::max\+Int) const \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+void \mbox{\hyperlink{class_safe_int_a7e02f701e5d54f3d057da18a9ce18fff}{Swap}} (\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \&with) \mbox{\hyperlink{_safe_int_8h_a01ec0d8fb142b67a779f42454f65df28}{SAFEINT\+\_\+\+NOTHROW}}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9}{align\+Bits}} bits$>$ }\\const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a44b07ea21e45b48fdcc92fd4a637339e}{Align}} () \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_ae3c3fcbbe30ac0240362e1dd61220fb7}{Align2}} ()
+\item 
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_a8a896b61f8652e26b51409adbdda4c8c}{Align4}} ()
+\item 
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_acd06393ca3462796fb848dc2c83af1e2}{Align8}} ()
+\item 
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_ad7f9aca0ee35f8a9d996ace85ded7cb6}{Align16}} ()
+\item 
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_ac4f754c89b72abdf9b1cb7af93040e5b}{Align32}} ()
+\item 
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int_aafb134f03d5c9cf6d12359653778a03d}{Align64}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_a6961f5309317ae638e28e2ed8199e52b}{Safe\+AtoI}} (const char $\ast$input) \mbox{\hyperlink{_safe_int_8h_ac5d51b821a1e240575aa900206de5b5f}{SAFEINT\+\_\+\+CPP\+\_\+\+THROW}}
+\item 
+static \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int_ac22a0c32994358f4ba2436d1e75af837}{Safe\+WtoI}} (const wchar\+\_\+t $\ast$input)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename E = Safe\+Int\+Default\+Exception\+Handler$>$\newline
+class Safe\+Int$<$ T, E $>$}
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05569}{5569}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9}\label{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!alignBits@{alignBits}}
+\index{alignBits@{alignBits}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{alignBits}{alignBits}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+enum \mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9}{Safe\+Int\+::align\+Bits}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{align2@{align2}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!align2@{align2}}}\mbox{\Hypertarget{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ad6dffff8e22e584f41f85b56a23b248a}\label{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ad6dffff8e22e584f41f85b56a23b248a}} 
+align2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{align4@{align4}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!align4@{align4}}}\mbox{\Hypertarget{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ae0c84c5771abfc7a7f7c6fb5bec04eba}\label{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ae0c84c5771abfc7a7f7c6fb5bec04eba}} 
+align4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{align8@{align8}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!align8@{align8}}}\mbox{\Hypertarget{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9afd35a80900e0f0633f0274ab4417ec76}\label{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9afd35a80900e0f0633f0274ab4417ec76}} 
+align8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{align16@{align16}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!align16@{align16}}}\mbox{\Hypertarget{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9a272f044fb3f6831124316bf9553575bd}\label{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9a272f044fb3f6831124316bf9553575bd}} 
+align16&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{align32@{align32}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!align32@{align32}}}\mbox{\Hypertarget{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ad255b09128f29c7544da357cfc898b0e}\label{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ad255b09128f29c7544da357cfc898b0e}} 
+align32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{align64@{align64}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!align64@{align64}}}\mbox{\Hypertarget{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9a0013f3fd4149a2c67bb777993a491e96}\label{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9a0013f3fd4149a2c67bb777993a491e96}} 
+align64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{align128@{align128}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!align128@{align128}}}\mbox{\Hypertarget{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ad193c4af04d3bdbb6b0bbb7de0863fcf}\label{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9ad193c4af04d3bdbb6b0bbb7de0863fcf}} 
+align128&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{align256@{align256}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!align256@{align256}}}\mbox{\Hypertarget{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9a51d50c907a8e284fb6d6efa8afc25818}\label{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9a51d50c907a8e284fb6d6efa8afc25818}} 
+align256&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06328}{6328}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_safe_int_a275cf26c84a73fb58023aea7c7066a2a}\label{class_safe_int_a275cf26c84a73fb58023aea7c7066a2a}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!SafeInt@{SafeInt}}
+\index{SafeInt@{SafeInt}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{SafeInt()}{SafeInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\mbox{\hyperlink{class_safe_int}{\+::\+Safe\+Int}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05572}{5572}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a696a073188c50577fcfaa03133aec1e6}\label{class_safe_int_a696a073188c50577fcfaa03133aec1e6}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!SafeInt@{SafeInt}}
+\index{SafeInt@{SafeInt}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{SafeInt()}{SafeInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\mbox{\hyperlink{class_safe_int}{\+::\+Safe\+Int}} (\begin{DoxyParamCaption}\item[{const T \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05581}{5581}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a40bab63afaac5359df9ef5deb8100e31}\label{class_safe_int_a40bab63afaac5359df9ef5deb8100e31}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!SafeInt@{SafeInt}}
+\index{SafeInt@{SafeInt}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{SafeInt()}{SafeInt()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\mbox{\hyperlink{class_safe_int}{\+::\+Safe\+Int}} (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05589}{5589}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a2cdfe5ff7dd19fb1580e2dbc2ff8021c}\label{class_safe_int_a2cdfe5ff7dd19fb1580e2dbc2ff8021c}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!SafeInt@{SafeInt}}
+\index{SafeInt@{SafeInt}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{SafeInt()}{SafeInt()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\mbox{\hyperlink{class_safe_int}{\+::\+Safe\+Int}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ \&}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05596}{5596}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ac6799ef3c397ceeffc007cf7792b8053}\label{class_safe_int_ac6799ef3c397ceeffc007cf7792b8053}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!SafeInt@{SafeInt}}
+\index{SafeInt@{SafeInt}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{SafeInt()}{SafeInt()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\mbox{\hyperlink{class_safe_int}{\+::\+Safe\+Int}} (\begin{DoxyParamCaption}\item[{const U \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05603}{5603}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_safe_int_a44b07ea21e45b48fdcc92fd4a637339e}\label{class_safe_int_a44b07ea21e45b48fdcc92fd4a637339e}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Align@{Align}}
+\index{Align@{Align}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Align()}{Align()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$\mbox{\hyperlink{class_safe_int_a6cff8c153afafee5d2566eddbcf67af9}{align\+Bits}} bits$>$ \\
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Align (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06341}{6341}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ad7f9aca0ee35f8a9d996ace85ded7cb6}\label{class_safe_int_ad7f9aca0ee35f8a9d996ace85ded7cb6}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Align16@{Align16}}
+\index{Align16@{Align16}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Align16()}{Align16()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Align16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06370}{6370}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ae3c3fcbbe30ac0240362e1dd61220fb7}\label{class_safe_int_ae3c3fcbbe30ac0240362e1dd61220fb7}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Align2@{Align2}}
+\index{Align2@{Align2}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Align2()}{Align2()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Align2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06367}{6367}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ac4f754c89b72abdf9b1cb7af93040e5b}\label{class_safe_int_ac4f754c89b72abdf9b1cb7af93040e5b}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Align32@{Align32}}
+\index{Align32@{Align32}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Align32()}{Align32()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Align32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06371}{6371}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a8a896b61f8652e26b51409adbdda4c8c}\label{class_safe_int_a8a896b61f8652e26b51409adbdda4c8c}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Align4@{Align4}}
+\index{Align4@{Align4}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Align4()}{Align4()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Align4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06368}{6368}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_aafb134f03d5c9cf6d12359653778a03d}\label{class_safe_int_aafb134f03d5c9cf6d12359653778a03d}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Align64@{Align64}}
+\index{Align64@{Align64}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Align64()}{Align64()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Align64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06372}{6372}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_acd06393ca3462796fb848dc2c83af1e2}\label{class_safe_int_acd06393ca3462796fb848dc2c83af1e2}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Align8@{Align8}}
+\index{Align8@{Align8}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Align8()}{Align8()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Align8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06369}{6369}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a83bb82e1a424b359018d9748b5da8c22}\label{class_safe_int_a83bb82e1a424b359018d9748b5da8c22}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Max@{Max}}
+\index{Max@{Max}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{test,  }\item[{const T}]{upper = {\ttfamily \mbox{\hyperlink{class_int_traits}{Int\+Traits}}$<$~T~$>$\+:\+:maxInt} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06305}{6305}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a6534d672667f2039010b8cf03f61bd46}\label{class_safe_int_a6534d672667f2039010b8cf03f61bd46}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Min@{Min}}
+\index{Min@{Min}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{test,  }\item[{const T}]{floor = {\ttfamily \mbox{\hyperlink{class_int_traits}{Int\+Traits}}$<$~T~$>$\+:\+:minInt} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06299}{6299}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a047b627740f18d7cebf02763378046d6}\label{class_safe_int_a047b627740f18d7cebf02763378046d6}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator \_\_int16@{operator \_\_int16}}
+\index{operator \_\_int16@{operator \_\_int16}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator \_\_int16()}{operator \_\_int16()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator \+\_\+\+\_\+int16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05678}{5678}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a3f7298ba1acb29e9159d16a6b6ad8604}\label{class_safe_int_a3f7298ba1acb29e9159d16a6b6ad8604}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator \_\_int32@{operator \_\_int32}}
+\index{operator \_\_int32@{operator \_\_int32}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator \_\_int32()}{operator \_\_int32()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator \+\_\+\+\_\+int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05692}{5692}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a199b382cec226cea56e36f25e40ca489}\label{class_safe_int_a199b382cec226cea56e36f25e40ca489}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator \_\_int64@{operator \_\_int64}}
+\index{operator \_\_int64@{operator \_\_int64}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator \_\_int64()}{operator \_\_int64()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator \+\_\+\+\_\+int64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05722}{5722}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a28956fc96bed6ef8622a4fca20d9155a}\label{class_safe_int_a28956fc96bed6ef8622a4fca20d9155a}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05652}{5652}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_afd101c0db4978530e011281ce183294d}\label{class_safe_int_afd101c0db4978530e011281ce183294d}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator char@{operator char}}
+\index{operator char@{operator char}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator char()}{operator char()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05657}{5657}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a09521359d076a0f5336b0e334aaec62d}\label{class_safe_int_a09521359d076a0f5336b0e334aaec62d}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator double@{operator double}}
+\index{operator double@{operator double}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator double()}{operator double()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05765}{5765}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a1405d7aa04c7e26f0ebd377a7df653ec}\label{class_safe_int_a1405d7aa04c7e26f0ebd377a7df653ec}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator float@{operator float}}
+\index{operator float@{operator float}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator float()}{operator float()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05758}{5758}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a9f23a0e8901662eecce0db44d3cea6c6}\label{class_safe_int_a9f23a0e8901662eecce0db44d3cea6c6}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator long@{operator long}}
+\index{operator long@{operator long}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator long()}{operator long()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05708}{5708}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_afd35d2dd00c289af0f79824f24913886}\label{class_safe_int_afd35d2dd00c289af0f79824f24913886}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator long double@{operator long double}}
+\index{operator long double@{operator long double}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator long double()}{operator long double()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator long double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05771}{5771}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a9188afb9958364689cd0fe2ffcdd2034}\label{class_safe_int_a9188afb9958364689cd0fe2ffcdd2034}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator signed char@{operator signed char}}
+\index{operator signed char@{operator signed char}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator signed char()}{operator signed char()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator signed char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05664}{5664}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a34eedcef71a7ccafb3d9177df09f1a65}\label{class_safe_int_a34eedcef71a7ccafb3d9177df09f1a65}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator unsigned \_\_int16@{operator unsigned \_\_int16}}
+\index{operator unsigned \_\_int16@{operator unsigned \_\_int16}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator unsigned \_\_int16()}{operator unsigned \_\_int16()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator unsigned \+\_\+\+\_\+int16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05685}{5685}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a54aec23b3262c86c13b12956fceaee57}\label{class_safe_int_a54aec23b3262c86c13b12956fceaee57}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator unsigned \_\_int32@{operator unsigned \_\_int32}}
+\index{operator unsigned \_\_int32@{operator unsigned \_\_int32}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator unsigned \_\_int32()}{operator unsigned \_\_int32()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator unsigned \+\_\+\+\_\+int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05699}{5699}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_aa8a1caa24e6c2b897d6cf447a10c7d3e}\label{class_safe_int_aa8a1caa24e6c2b897d6cf447a10c7d3e}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator unsigned \_\_int64@{operator unsigned \_\_int64}}
+\index{operator unsigned \_\_int64@{operator unsigned \_\_int64}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator unsigned \_\_int64()}{operator unsigned \_\_int64()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator unsigned \+\_\+\+\_\+int64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05729}{5729}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a6f09942190f577446b4a859a5b71d30a}\label{class_safe_int_a6f09942190f577446b4a859a5b71d30a}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator unsigned char@{operator unsigned char}}
+\index{operator unsigned char@{operator unsigned char}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator unsigned char()}{operator unsigned char()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator unsigned char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05671}{5671}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a7bfcf0a8dee92f555f5b4868050740e1}\label{class_safe_int_a7bfcf0a8dee92f555f5b4868050740e1}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator unsigned long@{operator unsigned long}}
+\index{operator unsigned long@{operator unsigned long}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator unsigned long()}{operator unsigned long()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator unsigned long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05715}{5715}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_aaeffebdbb10e7942ac2bffd105a51b94}\label{class_safe_int_aaeffebdbb10e7942ac2bffd105a51b94}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+bool \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator! (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05795}{5795}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a0b8835842cf5d614cebffdc88d8bd74f}\label{class_safe_int_a0b8835842cf5d614cebffdc88d8bd74f}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\%()}{operator\%()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\% (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05916}{5916}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a047668187ff78e71dbd5707ef3b8c6c6}\label{class_safe_int_a047668187ff78e71dbd5707ef3b8c6c6}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\%()}{operator\%()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\% (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05909}{5909}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a788ab04ced7776d3c981edf0b364dd3b}\label{class_safe_int_a788ab04ced7776d3c981edf0b364dd3b}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\%=()}{operator\%=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\%= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05932}{5932}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a976dd3599bbad8df3bb789bedfb7c378}\label{class_safe_int_a976dd3599bbad8df3bb789bedfb7c378}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\%=()}{operator\%=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\%= (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05925}{5925}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_aeb50cdd8c9b04267fab13377f10fd8d1}\label{class_safe_int_aeb50cdd8c9b04267fab13377f10fd8d1}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\&()}{operator\&()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const T $\ast$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05792}{5792}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a072f90c625d4e64a879ed7d45ce3dbab}\label{class_safe_int_a072f90c625d4e64a879ed7d45ce3dbab}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\&()}{operator\&()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+T $\ast$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05791}{5791}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a4525231776d2cae4ae1d6befd04b83af}\label{class_safe_int_a4525231776d2cae4ae1d6befd04b83af}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\&()}{operator\&()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\& (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06184}{6184}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a40fa5985eb189a062f40d7833237bc08}\label{class_safe_int_a40fa5985eb189a062f40d7833237bc08}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\&()}{operator\&()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\& (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06190}{6190}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a8a7d600a345cb0e78a3542f3d234539f}\label{class_safe_int_a8a7d600a345cb0e78a3542f3d234539f}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\&=@{operator\&=}}
+\index{operator\&=@{operator\&=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\&=()}{operator\&=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\&= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06208}{6208}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_aab830d65c672ecb0db3690da0466c0a4}\label{class_safe_int_aab830d65c672ecb0db3690da0466c0a4}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\&=@{operator\&=}}
+\index{operator\&=@{operator\&=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\&=()}{operator\&=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\&= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06222}{6222}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_afd3ae5670bd2832c6ae79ed462da938f}\label{class_safe_int_afd3ae5670bd2832c6ae79ed462da938f}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\&=@{operator\&=}}
+\index{operator\&=@{operator\&=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\&=()}{operator\&=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator\&= (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06215}{6215}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a205d342e8868d8dba949c013d9779e32}\label{class_safe_int_a205d342e8868d8dba949c013d9779e32}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05947}{5947}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ae48cda4bad4676fcdeae1abe6bdb2b5b}\label{class_safe_int_ae48cda4bad4676fcdeae1abe6bdb2b5b}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05940}{5940}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ae07064150afc2c1aab64314203bf7a00}\label{class_safe_int_ae07064150afc2c1aab64314203bf7a00}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05955}{5955}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a4dc549cce12f2c5a9673bd18b6347913}\label{class_safe_int_a4dc549cce12f2c5a9673bd18b6347913}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05969}{5969}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a80a84c46075eaa8981e2132440ba5892}\label{class_safe_int_a80a84c46075eaa8981e2132440ba5892}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05962}{5962}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a2676f91fc7f32b099c75a9e43f7c59ae}\label{class_safe_int_a2676f91fc7f32b099c75a9e43f7c59ae}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05800}{5800}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a107a7791d99c74381266431165f64d13}\label{class_safe_int_a107a7791d99c74381266431165f64d13}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06013}{6013}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ac5ae35bcbabe2427b58df28a3dc37d56}\label{class_safe_int_ac5ae35bcbabe2427b58df28a3dc37d56}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator+ (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06021}{6021}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_afb52b56629bd34a610eac927b046bd4c}\label{class_safe_int_afb52b56629bd34a610eac927b046bd4c}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05812}{5812}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a31879c26cf5c52e8645c9702876eb70f}\label{class_safe_int_a31879c26cf5c52e8645c9702876eb70f}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05837}{5837}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a0d628f7dd808c4ee57d1b6ca266a0811}\label{class_safe_int_a0d628f7dd808c4ee57d1b6ca266a0811}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06029}{6029}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a7f2f052ae9ed9b1daab73f6153225109}\label{class_safe_int_a7f2f052ae9ed9b1daab73f6153225109}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06043}{6043}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a1117bbab4cb0e829edc7d5c843b09f52}\label{class_safe_int_a1117bbab4cb0e829edc7d5c843b09f52}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator+= (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06036}{6036}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_aa5ec269f7200214ff51ac95fb4a94f22}\label{class_safe_int_aa5ec269f7200214ff51ac95fb4a94f22}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05804}{5804}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ababb3fa2b37107900bb059be9cc279c7}\label{class_safe_int_ababb3fa2b37107900bb059be9cc279c7}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06058}{6058}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a7032956275dc625e2d2c7b74e576bd91}\label{class_safe_int_a7032956275dc625e2d2c7b74e576bd91}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06051}{6051}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a14ede8cbd2a4a59c727c0c94b3fbdbfa}\label{class_safe_int_a14ede8cbd2a4a59c727c0c94b3fbdbfa}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05823}{5823}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ab1187587496ca9fa3669cf05bdfa4aa0}\label{class_safe_int_ab1187587496ca9fa3669cf05bdfa4aa0}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05850}{5850}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a2ced84ac087a3dc3a1e54099c18a6d3e}\label{class_safe_int_a2ced84ac087a3dc3a1e54099c18a6d3e}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06066}{6066}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a463d14d8da32fc8cf461b2cf85b40505}\label{class_safe_int_a463d14d8da32fc8cf461b2cf85b40505}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06080}{6080}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a5614761d8f947f34a8cf63d436c4d96a}\label{class_safe_int_a5614761d8f947f34a8cf63d436c4d96a}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06073}{6073}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a1844fc48d302664763d9dc687894681d}\label{class_safe_int_a1844fc48d302664763d9dc687894681d}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator/@{operator/}}
+\index{operator/@{operator/}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05984}{5984}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a148c74c637748ceeb4e46baddd773d79}\label{class_safe_int_a148c74c637748ceeb4e46baddd773d79}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator/@{operator/}}
+\index{operator/@{operator/}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator/ (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05977}{5977}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a33f3bd32f4b78aef3c51daa0f6cf66f1}\label{class_safe_int_a33f3bd32f4b78aef3c51daa0f6cf66f1}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05992}{5992}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ab7eb11cad6e8018bc791576bd5817e4c}\label{class_safe_int_ab7eb11cad6e8018bc791576bd5817e4c}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06004}{6004}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a068f2bc3925aeb0c4bb681bce08fa122}\label{class_safe_int_a068f2bc3925aeb0c4bb681bce08fa122}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator/= (\begin{DoxyParamCaption}\item[{U}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05998}{5998}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a78e86b2b30807042d1417bcb6a6041de}\label{class_safe_int_a78e86b2b30807042d1417bcb6a6041de}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{bits }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06080}{6080}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a5eb8641aab2b7dfeada5d7b3559e8c47}\label{class_safe_int_a5eb8641aab2b7dfeada5d7b3559e8c47}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{U}]{bits }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06080}{6080}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a7852bc920de11a1d36d3d4fe0bb98bcb}\label{class_safe_int_a7852bc920de11a1d36d3d4fe0bb98bcb}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$<$$<$=@{operator$<$$<$=}}
+\index{operator$<$$<$=@{operator$<$$<$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$=()}{operator<<=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$<$$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06080}{6080}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_acef95f6cd0ec6986f05904d4dd75be28}\label{class_safe_int_acef95f6cd0ec6986f05904d4dd75be28}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$<$$<$=@{operator$<$$<$=}}
+\index{operator$<$$<$=@{operator$<$$<$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$=()}{operator<<=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$<$$<$= (\begin{DoxyParamCaption}\item[{U}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06080}{6080}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a99b84b20cef5cd7d9279802d645f36c9}\label{class_safe_int_a99b84b20cef5cd7d9279802d645f36c9}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05644}{5644}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a5cf94be60ed60fcc9b1d988de5006ddd}\label{class_safe_int_a5cf94be60ed60fcc9b1d988de5006ddd}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05638}{5638}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a82d525a345cf34f3baf1ae83a95c0ffe}\label{class_safe_int_a82d525a345cf34f3baf1ae83a95c0ffe}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator= (\begin{DoxyParamCaption}\item[{const T \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05631}{5631}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a07829291b76e74cd81b87882d7c0a0ec}\label{class_safe_int_a07829291b76e74cd81b87882d7c0a0ec}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator= (\begin{DoxyParamCaption}\item[{const U \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05621}{5621}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ace489026216378b2345b211a41bde181}\label{class_safe_int_ace489026216378b2345b211a41bde181}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{bits }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06150}{6150}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a2ab1f33bb89e51b4d63eec8ea7a3de10}\label{class_safe_int_a2ab1f33bb89e51b4d63eec8ea7a3de10}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{U}]{bits }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06141}{6141}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ab59e6eaf228c431acdc55c81cb9b0557}\label{class_safe_int_ab59e6eaf228c431acdc55c81cb9b0557}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$>$$>$=@{operator$>$$>$=}}
+\index{operator$>$$>$=@{operator$>$$>$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$=()}{operator>>=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$>$$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06170}{6170}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_aa013e1301516c1cb5767ba9555b6003f}\label{class_safe_int_aa013e1301516c1cb5767ba9555b6003f}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$>$$>$=@{operator$>$$>$=}}
+\index{operator$>$$>$=@{operator$>$$>$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$=()}{operator>>=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$>$$>$= (\begin{DoxyParamCaption}\item[{U}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06160}{6160}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ae14f8cecfa13d4e8d3336abb5c3f1f6c}\label{class_safe_int_ae14f8cecfa13d4e8d3336abb5c3f1f6c}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$^\wedge$@{operator$^\wedge$}}
+\index{operator$^\wedge$@{operator$^\wedge$}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$^\wedge$()}{operator^()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$^\wedge$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06229}{6229}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a4f234e16de63cdbf1849bb0e177416b0}\label{class_safe_int_a4f234e16de63cdbf1849bb0e177416b0}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$^\wedge$@{operator$^\wedge$}}
+\index{operator$^\wedge$@{operator$^\wedge$}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$^\wedge$()}{operator^()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$^\wedge$ (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06235}{6235}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a22af3577bc998834988283fa87c464c2}\label{class_safe_int_a22af3577bc998834988283fa87c464c2}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$^\wedge$=@{operator$^\wedge$=}}
+\index{operator$^\wedge$=@{operator$^\wedge$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$^\wedge$=()}{operator^=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$^\wedge$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06245}{6245}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a413bdc349a10e6d27e7382a4fac4bdd1}\label{class_safe_int_a413bdc349a10e6d27e7382a4fac4bdd1}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$^\wedge$=@{operator$^\wedge$=}}
+\index{operator$^\wedge$=@{operator$^\wedge$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$^\wedge$=()}{operator^=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$^\wedge$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06259}{6259}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_acfca1abe927fe25c1832f51bc14b4b10}\label{class_safe_int_acfca1abe927fe25c1832f51bc14b4b10}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$^\wedge$=@{operator$^\wedge$=}}
+\index{operator$^\wedge$=@{operator$^\wedge$=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$^\wedge$=()}{operator^=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$^\wedge$= (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06252}{6252}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a668a55df2167ca4a5e98c765b3299e93}\label{class_safe_int_a668a55df2167ca4a5e98c765b3299e93}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}()}{operator|()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\vert$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06266}{6266}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a45ddf64a6c3fcb2805ca5a860dca0ee6}\label{class_safe_int_a45ddf64a6c3fcb2805ca5a860dca0ee6}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\texttt{"|}@{operator\texttt{"|}}}
+\index{operator\texttt{"|}@{operator\texttt{"|}}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}()}{operator|()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\vert$ (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06272}{6272}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ae73dfafc220f2edba98c94a67b6cdefc}\label{class_safe_int_ae73dfafc220f2edba98c94a67b6cdefc}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\texttt{"|}=@{operator\texttt{"|}=}}
+\index{operator\texttt{"|}=@{operator\texttt{"|}=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}=()}{operator|=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\vert$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06278}{6278}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_aeab76935855081965049b8ac0bd5c8af}\label{class_safe_int_aeab76935855081965049b8ac0bd5c8af}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\texttt{"|}=@{operator\texttt{"|}=}}
+\index{operator\texttt{"|}=@{operator\texttt{"|}=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}=()}{operator|=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\vert$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ U, E $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06292}{6292}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a864ba29896ee65c9b765a559d10c3708}\label{class_safe_int_a864ba29896ee65c9b765a559d10c3708}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator\texttt{"|}=@{operator\texttt{"|}=}}
+\index{operator\texttt{"|}=@{operator\texttt{"|}=}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texttt{"|}=()}{operator|=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\vert$= (\begin{DoxyParamCaption}\item[{U}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06285}{6285}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a29ac03df2a135ad8ce3f7027f96d941c}\label{class_safe_int_a29ac03df2a135ad8ce3f7027f96d941c}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!operator$\sim$@{operator$\sim$}}
+\index{operator$\sim$@{operator$\sim$}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\sim$()}{operator~()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::operator$\sim$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05864}{5864}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a070c372f820de3aeb9d8e9e091354735}\label{class_safe_int_a070c372f820de3aeb9d8e9e091354735}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Ptr()}{Ptr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const T $\ast$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05783}{5783}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a4218e65225698fce8b8dcbe81defce5b}\label{class_safe_int_a4218e65225698fce8b8dcbe81defce5b}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Ptr()}{Ptr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+T $\ast$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05782}{5782}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_aaddfca850a56f9ac12d72d98598c40ee}\label{class_safe_int_aaddfca850a56f9ac12d72d98598c40ee}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Ref@{Ref}}
+\index{Ref@{Ref}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Ref()}{Ref()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+const T \& \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l05784}{5784}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a6961f5309317ae638e28e2ed8199e52b}\label{class_safe_int_a6961f5309317ae638e28e2ed8199e52b}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!SafeAtoI@{SafeAtoI}}
+\index{SafeAtoI@{SafeAtoI}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{SafeAtoI()}{SafeAtoI()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+static \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Safe\+AtoI (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06318}{6318}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_ac22a0c32994358f4ba2436d1e75af837}\label{class_safe_int_ac22a0c32994358f4ba2436d1e75af837}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!SafeWtoI@{SafeWtoI}}
+\index{SafeWtoI@{SafeWtoI}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{SafeWtoI()}{SafeWtoI()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+static \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Safe\+WtoI (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06323}{6323}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_safe_int_a7e02f701e5d54f3d057da18a9ce18fff}\label{class_safe_int_a7e02f701e5d54f3d057da18a9ce18fff}} 
+\index{SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}!Swap@{Swap}}
+\index{Swap@{Swap}!SafeInt$<$ T, E $>$@{SafeInt$<$ T, E $>$}}
+\doxysubsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename T , typename E  = Safe\+Int\+Default\+Exception\+Handler$>$ \\
+void \mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$\+::\+Swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_safe_int}{Safe\+Int}}$<$ T, E $>$ \&}]{with }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l06311}{6311}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_safe_int_8h}{Safe\+Int.\+h}}\end{DoxyCompactItemize}

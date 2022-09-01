@@ -1,0 +1,560 @@
+\hypertarget{make__operations_8cpp_source}{}\doxysection{make\+\_\+operations.\+cpp}
+\mbox{\hyperlink{make__operations_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{make__operations_8h}{make\_operations.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00003}\mbox{\hyperlink{classmake__operations_ac88df8b582f176fd679320754dfdcfd9}{00003}} \mbox{\hyperlink{classmake__operations_ac88df8b582f176fd679320754dfdcfd9}{make\_operations::make\_operations}}(vector<QString> vector\_expression\_, map<QString, QString> params\_)}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00004}00004 \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00005}00005     vector\_expression = vector\_expression\_;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00006}00006     params = params\_;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00007}00007     \mbox{\hyperlink{classmake__operations_ace19e9fabcc251587e34522f336146d7}{inizialize}}();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00008}00008 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00010}\mbox{\hyperlink{classmake__operations_a93b7fab38b8dc77e6bb9baafec13268c}{00010}} \mbox{\hyperlink{classmake__operations_a93b7fab38b8dc77e6bb9baafec13268c}{make\_operations::\string~make\_operations}}() \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00013}\mbox{\hyperlink{classmake__operations_a493735a55c9aac84e29e336efbca40dc}{00013}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classmake__operations_a493735a55c9aac84e29e336efbca40dc}{make\_operations::distribution\_of\_operations}}() \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00014}00014     \textcolor{keywordtype}{long} \textcolor{keywordtype}{long} initial\_number\_of\_elements\_in\_vector = \mbox{\hyperlink{classmake__operations_a77ef63570f6612010a801b7105806ade}{count\_operations\_in\_expression}}();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00015}00015     QString number\_1 = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00016}00016     QString number\_2 = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00018}00018     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = vector\_expression.size() -\/ 1; initial\_number\_of\_elements\_in\_vector > 0 \&\& vector\_expression.size() > 0; -\/-\/ii) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00019}00019         QString current\_elem = vector\_expression[ii];}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00020}00020         }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00021}00021         \textcolor{keywordflow}{if} (count(operations.begin(), operations.end(), current\_elem) != 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00022}00022             \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}+"{}} || current\_elem == \textcolor{stringliteral}{"{}-\/"{}} || current\_elem == \textcolor{stringliteral}{"{}*"{}} || current\_elem == \textcolor{stringliteral}{"{}/"{}} || current\_elem == \textcolor{stringliteral}{"{}\%"{}} || current\_elem == \textcolor{stringliteral}{"{}\string^"{}} || current\_elem == \textcolor{stringliteral}{"{}log"{}} || current\_elem == \textcolor{stringliteral}{"{}-\/log"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00023}00023                 number\_2 = vector\_expression[ii + 1];}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00024}00024                 number\_1 = vector\_expression[ii + 2];}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00026}00026                 vector\_expression.erase(vector\_expression.begin() + ii + 1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00027}00027                 vector\_expression.erase(vector\_expression.begin() + ii + 1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00028}00028                 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00029}00029                 \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}+"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00030}00030                     vector\_expression[ii] = if\_plus(number\_1, number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00031}00031                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00032}00032                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}-\/"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00033}00033                     vector\_expression[ii] = if\_minus(number\_1, number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00034}00034                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00035}00035                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}*"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00036}00036                     vector\_expression[ii] = if\_multiply(number\_1, number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00037}00037                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00038}00038                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}/"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00039}00039                     vector\_expression[ii] = if\_divide(number\_1, number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00040}00040                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00041}00041                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}\%"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00042}00042                     vector\_expression[ii] = if\_balance(number\_1, number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00043}00043                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00044}00044                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}\string^"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00045}00045                     vector\_expression[ii] = if\_degree(number\_1, number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00046}00046                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00047}00047                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}-\/log"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00048}00048                     vector\_expression[ii] = QString::number(if\_log(number\_1, number\_2).toDouble() * (-\/1));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00049}00049                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00050}00050                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}log"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00051}00051                     vector\_expression[ii] = if\_log(number\_1, number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00052}00052                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00053}00053             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00054}00054             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}sin"{}} || current\_elem == \textcolor{stringliteral}{"{}-\/sin"{}} || current\_elem == \textcolor{stringliteral}{"{}cos"{}} || current\_elem == \textcolor{stringliteral}{"{}-\/cos"{}} || current\_elem == \textcolor{stringliteral}{"{}ln"{}} || current\_elem == \textcolor{stringliteral}{"{}-\/ln"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00055}00055                 number\_1 = vector\_expression[ii + 1];}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00056}00056                 vector\_expression.erase(vector\_expression.begin() + ii + 1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00058}00058                 \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}sin"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00059}00059                     vector\_expression[ii] = if\_sin(number\_1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00060}00060                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00061}00061                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}-\/sin"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00062}00062                     vector\_expression[ii] = QString::number(if\_sin(number\_1).toDouble() * (-\/1));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00063}00063                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00064}00064                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}cos"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00065}00065                     vector\_expression[ii] = if\_cos(number\_1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00066}00066                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00067}00067                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}-\/cos"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00068}00068                     vector\_expression[ii] = QString::number(if\_cos(number\_1).toDouble() * (-\/1));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00069}00069                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00070}00070                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}ln"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00071}00071                     vector\_expression[ii] = if\_ln(number\_1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00072}00072                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00073}00073                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_elem == \textcolor{stringliteral}{"{}-\/ln"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00074}00074                     vector\_expression[ii] = QString::number(if\_ln(number\_1).toDouble() * (-\/1));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00075}00075                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00076}00076             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00078}00078             -\/-\/initial\_number\_of\_elements\_in\_vector;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00079}00079         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00080}00080         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (CONSTANTS\_NUMBER.find(current\_elem) != CONSTANTS\_NUMBER.end()) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00081}00081             vector\_expression[ii] = QString::number(CONSTANTS\_NUMBER[current\_elem]);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00082}00082         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00083}00083         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (params.find(current\_elem) != params.end()) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00084}00084             vector\_expression[ii] = params[current\_elem];}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00085}00085         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00086}00086     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00087}00087     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = vector\_expression.size() -\/ 1; ii < vector\_expression.size(); ++ii) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00088}00088         \textcolor{keywordflow}{if} (params.find(vector\_expression[ii]) != params.end()) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00089}00089             vector\_expression[ii] = params[vector\_expression[ii]];}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00090}00090         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00091}00091         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (CONSTANTS\_NUMBER.find(vector\_expression[ii]) != CONSTANTS\_NUMBER.end()) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00092}00092             \textcolor{comment}{//vector\_expression[ii] = CONSTANTS\_NUMBER[vector\_expression[ii]];}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00093}00093         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00094}00094     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00096}00096     \mbox{\hyperlink{classmake__operations_a61539906d2abf3f22825de7b08b1cb38}{getResult}}();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00097}00097 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00099}00099 QString make\_operations::if\_plus(QString number\_1, QString number\_2) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00100}00100     QString ans\_str = \textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00101}00101     \textcolor{keywordtype}{long} ans\_long;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00102}00102     \textcolor{keywordflow}{if} (!number\_1.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_2.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_1.contains(\textcolor{stringliteral}{"{},"{}}) \&\& !number\_2.contains(\textcolor{stringliteral}{"{},"{}})) \{ \textcolor{comment}{// если целое}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00103}00103         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1) \&\& !\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_2)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00104}00104             \textcolor{keywordtype}{long} long\_number\_1 = number\_1.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00105}00105             \textcolor{keywordtype}{long} long\_number\_2 = number\_2.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00107}00107             \textcolor{keywordtype}{long} result\_short;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00108}00108             \textcolor{keywordflow}{if} (\mbox{\hyperlink{_safe_int_8h_a68f0bbfd0edbfa9cad1716011cb4b657}{SafeAdd}}(long\_number\_1, long\_number\_2, result\_short)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00109}00109                 \textcolor{keywordflow}{return} QString::number(result\_short);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00110}00110             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00111}00111             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00112}00112                 \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_1(long\_number\_1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00113}00113                 \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_2(long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00114}00114                 \mbox{\hyperlink{class_big_int}{BigInt}} result\_big = big\_num\_1 + big\_num\_2;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00116}00116                 \textcolor{keywordflow}{return} QString::fromUtf8(result\_big.\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00117}00117             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00118}00118         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00119}00119         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00121}00121             \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_1(number\_1.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00122}00122             \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_2(number\_2.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00123}00123             \mbox{\hyperlink{class_big_int}{BigInt}} result\_big = big\_num\_1 + big\_num\_2;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00125}00125             \textcolor{keywordflow}{return} QString::fromUtf8(result\_big.\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00126}00126         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00127}00127     \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{// оба дробные}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00128}00128         \textcolor{keywordtype}{double} result = number\_1.toDouble() + number\_2.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00129}00129         \textcolor{keywordflow}{return} QString::number(result);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00130}00130     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00132}00132     \textcolor{keywordflow}{return} ans\_str;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00133}00133 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00135}00135 QString make\_operations::if\_minus(QString number\_1, QString number\_2) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00136}00136     QString ans\_str = \textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00137}00137     \textcolor{keywordtype}{long} ans\_long;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00138}00138     \textcolor{keywordflow}{if} (!number\_1.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_2.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_1.contains(\textcolor{stringliteral}{"{},"{}}) \&\& !number\_2.contains(\textcolor{stringliteral}{"{},"{}})) \{ \textcolor{comment}{// если целое}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00139}00139         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1) \&\& !\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_2)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00140}00140             \textcolor{keywordtype}{long} long\_number\_1 = number\_1.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00141}00141             \textcolor{keywordtype}{long} long\_number\_2 = number\_2.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00142}00142 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00143}00143             \textcolor{keywordtype}{long} result\_short;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00144}00144             \textcolor{keywordflow}{if} (long\_number\_1 >= 0 \&\& long\_number\_2 >= 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00145}00145                 \textcolor{keywordflow}{return} QString::number(long\_number\_1 -\/ long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00146}00146             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00147}00147             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (long\_number\_1 < 0 \&\& long\_number\_2 >= 0 \&\& abs(long\_number\_1) + long\_number\_2 <= LONG\_MAX) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00148}00148                 \textcolor{keywordflow}{return} QString::number(long\_number\_1 -\/ long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00149}00149             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00150}00150             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (long\_number\_1 >= 0 \&\& long\_number\_2 < 0 \&\& long\_number\_1 + abs(long\_number\_2) <= LONG\_MAX) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00151}00151                 \textcolor{keywordflow}{return} QString::number(long\_number\_1 -\/ long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00152}00152             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00153}00153             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (long\_number\_1 < 0 \&\& long\_number\_2 < 0 \&\& abs(long\_number\_1) + abs(long\_number\_2) <= LONG\_MAX) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00154}00154                 \textcolor{keywordflow}{return} QString::number(long\_number\_1 -\/ long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00155}00155             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00156}00156             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00157}00157                 \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_1(long\_number\_1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00158}00158                 \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_2(long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00159}00159                 \mbox{\hyperlink{class_big_int}{BigInt}} result\_big = big\_num\_1 -\/ big\_num\_2;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00161}00161                 \textcolor{keywordflow}{return} QString::fromUtf8(result\_big.\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00162}00162             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00163}00163         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00164}00164         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00166}00166             \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_1(number\_1.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00167}00167             \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_2(number\_2.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00168}00168             \mbox{\hyperlink{class_big_int}{BigInt}} result\_big = big\_num\_1 -\/ big\_num\_2;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00170}00170             \textcolor{keywordflow}{return} QString::fromUtf8(result\_big.\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00171}00171         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00172}00172     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00173}00173     \textcolor{keywordflow}{else} \{ \textcolor{comment}{// оба дробные}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00174}00174         \textcolor{keywordtype}{double} result = number\_1.toDouble() -\/ number\_2.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00175}00175         \textcolor{keywordflow}{return} QString::number(result);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00176}00176     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00177}00177 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00178}00178     \textcolor{keywordflow}{return} ans\_str;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00179}00179 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00180}00180 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00181}00181 QString make\_operations::if\_multiply(QString number\_1, QString number\_2) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00182}00182     QString ans\_str = \textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00184}00184     \textcolor{keywordflow}{if} (!number\_1.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_2.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_1.contains(\textcolor{stringliteral}{"{},"{}}) \&\& !number\_2.contains(\textcolor{stringliteral}{"{},"{}})) \{ \textcolor{comment}{// если целое}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00185}00185         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1) \&\& !\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_2)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00186}00186             \textcolor{keywordtype}{long} long\_number\_1 = number\_1.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00187}00187             \textcolor{keywordtype}{long} long\_number\_2 = number\_2.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00189}00189             \textcolor{keywordtype}{long} result\_short;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00190}00190 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00191}00191             \textcolor{keywordflow}{if} (\mbox{\hyperlink{_safe_int_8h_a3473a7c0bc0a8b7b6a58921c745e9a20}{SafeMultiply}}(long\_number\_1, long\_number\_2, result\_short)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00192}00192                 \textcolor{keywordflow}{return} QString::number(result\_short);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00193}00193             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00194}00194             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00195}00195                 \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_1(long\_number\_1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00196}00196                 \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_2(long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00197}00197                 \mbox{\hyperlink{class_big_int}{BigInt}} result\_big = big\_num\_1 * big\_num\_2;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00198}00198 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00199}00199                 \textcolor{keywordflow}{return} QString::fromUtf8(result\_big.\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00200}00200             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00201}00201         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00202}00202         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00204}00204             \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_1(number\_1.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00205}00205             \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_2(number\_2.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00206}00206             \mbox{\hyperlink{class_big_int}{BigInt}} result\_big = big\_num\_1 * big\_num\_2;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00208}00208             \textcolor{keywordflow}{return} QString::fromUtf8(result\_big.\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00209}00209         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00210}00210     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00211}00211     \textcolor{keywordflow}{else} \{ \textcolor{comment}{// оба дробные}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00212}00212         \textcolor{keywordtype}{double} result = number\_1.toDouble() * number\_2.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00213}00213         \textcolor{keywordflow}{return} QString::number(result);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00214}00214     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00215}00215 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00216}00216     \textcolor{keywordflow}{return} ans\_str;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00217}00217 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00218}00218 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00219}00219 QString make\_operations::if\_divide(QString number\_1, QString number\_2) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00220}00220     QString ans\_str = \textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00221}00221 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00222}00222     \textcolor{keywordflow}{if} (!number\_1.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_2.contains(\textcolor{stringliteral}{"{}."{}})) \{ \textcolor{comment}{// если целое}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00223}00223         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1) \&\& !\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_2)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00224}00224             \textcolor{keywordtype}{long} long\_number\_1 = number\_1.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00225}00225             \textcolor{keywordtype}{long} long\_number\_2 = number\_2.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00226}00226 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00227}00227             \textcolor{keywordflow}{if} (long\_number\_2 == 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00228}00228                 \textcolor{keywordflow}{throw} 101;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00229}00229             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00230}00230 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00231}00231             \textcolor{keywordtype}{long} result\_short;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00232}00232 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00233}00233             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{_safe_int_8h_adb23808183d708ad75a37a489e22475c}{SafeDivide}}(long\_number\_1, long\_number\_2, result\_short)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00234}00234                 \textcolor{keywordflow}{return} QString::number(result\_short);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00235}00235             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00236}00236             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00237}00237                 \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_1(long\_number\_1);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00238}00238                 \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_2(long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00239}00239                 \mbox{\hyperlink{class_big_int}{BigInt}} result\_big = big\_num\_1 / big\_num\_2;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00240}00240 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00241}00241                 \textcolor{keywordflow}{return} QString::fromUtf8(result\_big.\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00242}00242             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00243}00243         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00244}00244         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00245}00245 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00246}00246             \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_1(number\_1.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00247}00247             \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_2(number\_2.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00248}00248             }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00249}00249             \mbox{\hyperlink{class_big_int}{BigInt}} result\_big = big\_num\_1 / big\_num\_2;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00250}00250 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00251}00251             \textcolor{keywordflow}{return} QString::fromUtf8(result\_big.\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00252}00252         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00253}00253     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00254}00254     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1) \&\& (number\_2.contains(\textcolor{stringliteral}{"{}."{}}) || number\_2.contains(\textcolor{stringliteral}{"{},"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00255}00255         \textcolor{keywordflow}{throw} 102;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00256}00256     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00257}00257     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_2) \&\& (number\_1.contains(\textcolor{stringliteral}{"{}."{}}) || number\_1.contains(\textcolor{stringliteral}{"{},"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00258}00258         \textcolor{keywordflow}{throw} 103;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00259}00259     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00260}00260     \textcolor{keywordflow}{else} \{ \textcolor{comment}{// оба дробные}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00261}00261         \textcolor{keywordtype}{double} result = number\_1.toDouble() / number\_2.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00262}00262         \textcolor{keywordflow}{return} QString::number(result);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00263}00263     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00264}00264 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00265}00265     \textcolor{keywordflow}{return} ans\_str;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00266}00266 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00267}00267 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00268}00268 QString make\_operations::if\_balance(QString number\_1, QString number\_2)}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00269}00269 \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00270}00270     QString ans = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00271}00271     \textcolor{keywordflow}{if} (!number\_1.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_2.contains(\textcolor{stringliteral}{"{}."{}})) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00272}00272         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1) \&\& !\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_2)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00273}00273             \textcolor{keywordtype}{long} long\_number\_1 = number\_1.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00274}00274             \textcolor{keywordtype}{long} long\_number\_2 = number\_2.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00275}00275 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00276}00276             \textcolor{keywordflow}{if} (long\_number\_2 == 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00277}00277                 \textcolor{keywordflow}{throw} 101;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00278}00278             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00279}00279 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00280}00280             \textcolor{keywordflow}{return} QString::number(long\_number\_1 \% long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00281}00281         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00282}00282         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00283}00283             \textcolor{keywordflow}{if} (number\_2 == \textcolor{stringliteral}{"{}0"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00284}00284                 \textcolor{keywordflow}{throw} 101;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00285}00285             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00286}00286             \mbox{\hyperlink{class_big_int}{BigInt}} big\_number\_1(number\_1.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00287}00287             \mbox{\hyperlink{class_big_int}{BigInt}} big\_number\_2(number\_2.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00288}00288             \mbox{\hyperlink{class_big_int}{BigInt}} res = big\_number\_1 \% big\_number\_2;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00289}00289             \textcolor{keywordflow}{return} QString::fromStdString(res.\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00290}00290         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00291}00291     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00292}00292     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00293}00293         \textcolor{keywordflow}{throw} 112;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00294}00294     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00295}00295 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00296}00296 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00297}00297 QString make\_operations::if\_sin(QString number\_1) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00298}00298     QString ans\_str = \textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00299}00299 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00300}00300     \textcolor{keywordflow}{if} (!number\_1.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_1.contains(\textcolor{stringliteral}{"{},"{}})) \{ \textcolor{comment}{// если целое}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00301}00301         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00302}00302             \textcolor{keywordtype}{long} long\_number\_1 = number\_1.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00303}00303 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00304}00304             \textcolor{keywordflow}{return} QString::number(std::sin(long\_number\_1));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00305}00305         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00306}00306         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00307}00307             \textcolor{keywordflow}{throw} 104;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00308}00308         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00309}00309     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00310}00310 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00311}00311     \textcolor{keywordflow}{else} \{ \textcolor{comment}{// оба дробные}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00312}00312         \textcolor{keywordflow}{return} QString::number(std::sin(number\_1.toDouble()));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00313}00313     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00314}00314 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00315}00315     \textcolor{keywordflow}{return} ans\_str;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00316}00316 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00317}00317 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00318}00318 QString make\_operations::if\_cos(QString number\_1) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00319}00319     QString ans\_str = \textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00320}00320 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00321}00321     \textcolor{keywordflow}{if} (!number\_1.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_1.contains(\textcolor{stringliteral}{"{},"{}})) \{ \textcolor{comment}{// если целое}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00322}00322         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00323}00323             \textcolor{keywordtype}{long} long\_number\_1 = number\_1.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00324}00324 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00325}00325             \textcolor{keywordflow}{return} QString::number(std::cos(long\_number\_1));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00326}00326         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00327}00327         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00328}00328             \textcolor{keywordflow}{throw} 104;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00329}00329         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00330}00330     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00331}00331     \textcolor{keywordflow}{else} \{ \textcolor{comment}{// оба дробные}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00332}00332         \textcolor{keywordflow}{return} QString::number(std::cos(number\_1.toDouble()));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00333}00333     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00334}00334 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00335}00335     \textcolor{keywordflow}{return} ans\_str;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00336}00336 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00337}00337 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00338}00338  QString make\_operations::if\_degree(QString number\_1, QString number\_2) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00339}00339      QString ans\_str = \textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00340}00340 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00341}00341      \textcolor{keywordflow}{if} (!number\_1.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number\_2.contains(\textcolor{stringliteral}{"{}."{}})) \{ \textcolor{comment}{// если целое}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00342}00342          \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1) \&\& !\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_2)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00343}00343              \textcolor{keywordtype}{long} long\_number\_1 = number\_1.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00344}00344              \textcolor{keywordtype}{long} long\_number\_2 = number\_2.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00345}00345 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00346}00346              \textcolor{keywordflow}{if} (long\_number\_2 > 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00347}00347                  \textcolor{keywordtype}{long} result\_short;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00348}00348                  result\_short = pow(long\_number\_1, long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00349}00349                  \textcolor{keywordflow}{if} (result\_short == LONG\_MIN) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00350}00350                      \textcolor{keywordflow}{throw} 105;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00351}00351                  \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00352}00352                  \textcolor{keywordflow}{return} QString::number(result\_short);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00353}00353              \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00354}00354              \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00355}00355                  \textcolor{keywordtype}{double} result\_short;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00356}00356                  result\_short = pow(long\_number\_1, long\_number\_2);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00357}00357 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00358}00358                  \textcolor{keywordflow}{return} QString::number(result\_short);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00359}00359              \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00360}00360          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00361}00361          \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_1) \&\& !\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number\_2)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00362}00362              \textcolor{keywordflow}{if} (number\_2.toLong() < 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00363}00363                  \textcolor{keywordflow}{throw} 113;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00364}00364              \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00365}00365              \mbox{\hyperlink{class_big_int}{BigInt}} big\_num\_1(number\_1.toStdString());}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00366}00366              \textcolor{keywordtype}{long} big\_num\_2 = number\_2.toLong();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00367}00367              \textcolor{keywordtype}{string} ans\_degree = big\_num\_1.pow(big\_num\_2).getValue();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00368}00368              \textcolor{keywordflow}{return} QString::fromStdString(ans\_degree);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00369}00369          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00370}00370          \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00371}00371              \textcolor{keywordflow}{throw} 110;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00372}00372          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00373}00373      \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00374}00374      \textcolor{keywordflow}{else} \{ \textcolor{comment}{// оба дробные}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00375}00375          \textcolor{keywordtype}{double} double\_num\_1 = number\_1.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00376}00376          \textcolor{keywordtype}{double} double\_num\_2 = number\_2.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00377}00377          \textcolor{keywordflow}{if} (double\_num\_1 < 0 \&\& number\_2.contains(\textcolor{stringliteral}{"{}."{}})) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00378}00378              \textcolor{keywordflow}{throw} 111;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00379}00379          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00380}00380          }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00381}00381          \textcolor{keywordflow}{return} QString::number(pow(double\_num\_1, double\_num\_2));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00382}00382      \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00383}00383 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00384}00384      \textcolor{keywordflow}{return} ans\_str;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00385}00385  \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00386}00386 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00387}00387  QString make\_operations::if\_log(QString base, QString number) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00388}00388      QString ans\_str = \textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00389}00389 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00390}00390      \textcolor{keywordflow}{if} (!base.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !base.contains(\textcolor{stringliteral}{"{},"{}}) \&\& !number.contains(\textcolor{stringliteral}{"{},"{}})) \{ \textcolor{comment}{// если целое}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00391}00391          \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(base) \&\& !\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00392}00392              \textcolor{keywordtype}{long} base\_long = base.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00393}00393              \textcolor{keywordtype}{long} number\_long = number.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00394}00394              \textcolor{keywordflow}{if} (base\_long != 1 \&\& base\_long > 0 \&\& number\_long > 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00395}00395                  \textcolor{keywordflow}{return} QString::number(log(number\_long) / log(base\_long));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00396}00396              \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00397}00397              \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (base\_long == 1) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00398}00398                  \textcolor{keywordflow}{throw} 106;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00399}00399              \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00400}00400              \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (base\_long <= 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00401}00401                  \textcolor{keywordflow}{throw} 107;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00402}00402              \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00403}00403              \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (number\_long <= 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00404}00404                  \textcolor{keywordflow}{throw} 108;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00405}00405              \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00406}00406          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00407}00407          \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00408}00408              \textcolor{keywordflow}{throw} 109;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00409}00409          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00410}00410      \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00411}00411      \textcolor{keywordflow}{else} \{ \textcolor{comment}{// оба дробные}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00412}00412          \textcolor{keywordtype}{double} base\_double = base.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00413}00413          \textcolor{keywordtype}{double} number\_double = number.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00414}00414          \textcolor{keywordflow}{if} (base\_double != 1 \&\& base\_double > 0 \&\& number\_double > 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00415}00415              \textcolor{keywordflow}{return} QString::number(log(number\_double) / log(base\_double));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00416}00416          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00417}00417          \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (base\_double == 1) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00418}00418              \textcolor{keywordflow}{throw} 106;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00419}00419          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00420}00420          \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (base\_double <= 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00421}00421              \textcolor{keywordflow}{throw} 107;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00422}00422          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00423}00423          \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (number\_double <= 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00424}00424              \textcolor{keywordflow}{throw} 108;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00425}00425          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00426}00426      \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00427}00427 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00428}00428      \textcolor{keywordflow}{return} ans\_str;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00429}00429  \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00430}00430 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00431}00431  QString make\_operations::if\_ln(QString number) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00432}00432      QString ans\_str = \textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00433}00433 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00434}00434      \textcolor{keywordflow}{if} (!number.contains(\textcolor{stringliteral}{"{}."{}}) \&\& !number.contains(\textcolor{stringliteral}{"{},"{}})) \{ \textcolor{comment}{// если целое}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00435}00435          \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{is\_big\_number\_integer}}(number)) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00436}00436              \textcolor{keywordtype}{long} number\_long = number.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00437}00437              \textcolor{keywordflow}{if} (number\_long > 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00438}00438                  \textcolor{keywordflow}{return} QString::number(log(number\_long));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00439}00439              \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00440}00440              \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00441}00441                  \textcolor{keywordflow}{throw} 108;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00442}00442              \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00443}00443          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00444}00444          \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00445}00445              \textcolor{keywordflow}{throw} 109;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00446}00446          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00447}00447      \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00448}00448      \textcolor{keywordflow}{else} \{ \textcolor{comment}{// оба дробные}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00449}00449          \textcolor{keywordtype}{double} number\_double = number.toDouble();}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00450}00450          \textcolor{keywordflow}{if} (number\_double > 0) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00451}00451              \textcolor{keywordflow}{return} QString::number(log(number\_double));}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00452}00452          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00453}00453          \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00454}00454              \textcolor{keywordflow}{throw} 108;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00455}00455          \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00456}00456      \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00457}00457 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00458}00458      \textcolor{keywordflow}{return} ans\_str;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00459}00459  \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00460}00460 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00461}\mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{00461}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classmake__operations_a7dd8945a7ddd43a196794d23481ad2e7}{make\_operations::is\_big\_number\_integer}}(QString number) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00462}00462     \textcolor{keywordtype}{int} MAX\_IN\_LONG\_PLUS = 10;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00463}00463     \textcolor{keywordtype}{int} MAX\_IN\_LONG\_MINUS = 11;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00464}00464 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00465}00465     \textcolor{keywordflow}{if} (number.length() == MAX\_IN\_LONG\_PLUS \&\& number[0] != \textcolor{stringliteral}{"{}-\/"{}}) \{ \textcolor{comment}{// +}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00466}00466         \textcolor{keywordflow}{if} (QString(number[0]).toInt() <= 2) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00467}00467             \textcolor{keywordflow}{if} (QString(number[1]).toInt() <= 1) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00468}00468                 \textcolor{keywordflow}{if} (QString(number[2]).toInt() <= 4) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00469}00469                     \textcolor{keywordflow}{if} (QString(number[3]).toInt() <= 7) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00470}00470                         \textcolor{keywordflow}{if} (QString(number[4]).toInt() <= 4) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00471}00471                             \textcolor{keywordflow}{if} (QString(number[5]).toInt() <= 8) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00472}00472                                 \textcolor{keywordflow}{if} (QString(number[6]).toInt() <= 3) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00473}00473                                     \textcolor{keywordflow}{if} (QString(number[7]).toInt() <= 6) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00474}00474                                         \textcolor{keywordflow}{if} (QString(number[8]).toInt() <= 4) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00475}00475                                             \textcolor{keywordflow}{if} (QString(number[9]).toInt() <= 7) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00476}00476                                                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00477}00477                                             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00478}00478                                         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00479}00479                                     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00480}00480                                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00481}00481                             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00482}00482                         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00483}00483                     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00484}00484                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00485}00485             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00486}00486         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00487}00487 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00488}00488         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00489}00489     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00490}00490     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (number.length() == MAX\_IN\_LONG\_MINUS \&\& number[0] == \textcolor{stringliteral}{"{}-\/"{}}) \{ \textcolor{comment}{// -\/}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00491}00491         \textcolor{keywordflow}{if} (QString(number[1]).toInt() <= 2) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00492}00492             \textcolor{keywordflow}{if} (QString(number[2]).toInt() <= 1) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00493}00493                 \textcolor{keywordflow}{if} (QString(number[3]).toInt() <= 4) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00494}00494                     \textcolor{keywordflow}{if} (QString(number[4]).toInt() <= 7) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00495}00495                         \textcolor{keywordflow}{if} (QString(number[5]).toInt() <= 4) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00496}00496                             \textcolor{keywordflow}{if} (QString(number[6]).toInt() <= 8) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00497}00497                                 \textcolor{keywordflow}{if} (QString(number[7]).toInt() <= 3) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00498}00498                                     \textcolor{keywordflow}{if} (QString(number[8]).toInt() <= 6) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00499}00499                                         \textcolor{keywordflow}{if} (QString(number[9]).toInt() <= 4) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00500}00500                                             \textcolor{keywordflow}{if} (QString(number[10]).toInt() <= 8) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00501}00501                                                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00502}00502                                             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00503}00503                                         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00504}00504                                     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00505}00505                                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00506}00506                             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00507}00507                         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00508}00508                     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00509}00509                 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00510}00510             \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00511}00511         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00512}00512 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00513}00513         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00514}00514     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00515}00515     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (number.length() < 10) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00516}00516         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00517}00517     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00518}00518     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00519}00519         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00520}00520     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00521}00521 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00522}00522     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00523}00523 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00524}00524 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00525}\mbox{\hyperlink{classmake__operations_a77ef63570f6612010a801b7105806ade}{00525}} \textcolor{keywordtype}{long} \textcolor{keywordtype}{long} \mbox{\hyperlink{classmake__operations_a77ef63570f6612010a801b7105806ade}{make\_operations::count\_operations\_in\_expression}}() \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00526}00526     \textcolor{keywordtype}{long} \textcolor{keywordtype}{long} count\_operations = 0;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00527}00527     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0; ii < operations.size(); ++ii) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00528}00528         count\_operations += count(vector\_expression.begin(), vector\_expression.end(), operations[ii]);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00529}00529     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00530}00530 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00531}00531     \textcolor{keywordflow}{return} count\_operations;}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00532}00532 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00533}00533 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00534}\mbox{\hyperlink{classmake__operations_ace19e9fabcc251587e34522f336146d7}{00534}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classmake__operations_ace19e9fabcc251587e34522f336146d7}{make\_operations::inizialize}}() \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00535}00535     QString elem\_now = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00536}00536     QString operations\_string = \{ \textcolor{stringliteral}{"{}+,-\/,*,/,\%,\string^,cos,sin,-\/sin,-\/cos,log,-\/log,ln,-\/ln"{}} \};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00537}00537     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0; ii < operations\_string.length(); ++ii) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00538}00538         \textcolor{keywordflow}{if} (operations\_string[ii] != \textcolor{stringliteral}{"{},"{}}) \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00539}00539             elem\_now += operations\_string[ii];}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00540}00540         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00541}00541         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00542}00542             operations.push\_back(elem\_now);}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00543}00543             elem\_now = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00544}00544         \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00545}00545     \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00546}00546 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00547}00547     CONSTANTS\_NUMBER[\textcolor{stringliteral}{"{}Pi"{}}] = \mbox{\hyperlink{make__operations_8h_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00548}00548     CONSTANTS\_NUMBER[\textcolor{stringliteral}{"{}e"{}}] = \mbox{\hyperlink{make__operations_8h_a1cec5659f265f9084df99a29b8b7e811}{EULER\_NUMBER}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00549}00549     CONSTANTS\_NUMBER[\textcolor{stringliteral}{"{}-\/Pi"{}}] = (-\/1) * \mbox{\hyperlink{make__operations_8h_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00550}00550     CONSTANTS\_NUMBER[\textcolor{stringliteral}{"{}-\/e"{}}] = (-\/1) * \mbox{\hyperlink{make__operations_8h_a1cec5659f265f9084df99a29b8b7e811}{EULER\_NUMBER}};}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00551}00551 \}}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00552}00552 }
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00553}\mbox{\hyperlink{classmake__operations_a61539906d2abf3f22825de7b08b1cb38}{00553}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classmake__operations_a61539906d2abf3f22825de7b08b1cb38}{make\_operations::getResult}}() \{}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00554}00554     result\_operations = vector\_expression[0];}
+\DoxyCodeLine{\Hypertarget{make__operations_8cpp_source_l00555}00555 \}}
+
+\end{DoxyCode}

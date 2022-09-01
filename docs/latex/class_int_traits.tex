@@ -1,0 +1,176 @@
+\hypertarget{class_int_traits}{}\doxysection{Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_int_traits}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Safe\+Int.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1c7362dced97f3e172bca532098c2e82}{is\+Signed}} = ( (T)(-\/1) \texorpdfstring{$<$}{<} 0 )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba7df074c5bbec3906a2928ef3c5524dbd}{is64\+Bit}} = ( sizeof(T) == 8 )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1e59e843b997443e18eb34e64d2da82f}{is32\+Bit}} = ( sizeof(T) == 4 )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba7320d43b212f6ad4bb60ed4d9081b649}{is16\+Bit}} = ( sizeof(T) == 2 )
+, \newline
+\mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532bac35e0c8c90a40aa8c888a928c6d28a5e}{is8\+Bit}} = ( sizeof(T) == 1 )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba5514435151a1ad8ea8d2341c5e7795b8}{is\+LT32\+Bit}} = ( sizeof(T) \texorpdfstring{$<$}{<} 4 )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba89f70c20fd7b58f86d0c37037a2339c8}{is\+LT64\+Bit}} = ( sizeof(T) \texorpdfstring{$<$}{<} 8 )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba4cf69a7a7779641d4ba56020fc77e069}{is\+Int8}} = ( sizeof(T) == 1 \&\& is\+Signed )
+, \newline
+\mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba72f6b0121a25b95467492f8d255ead2b}{is\+Uint8}} = ( sizeof(T) == 1 \&\& !is\+Signed )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba059051bc3e0826e9f9293c8d3d382c55}{is\+Int16}} = ( sizeof(T) == 2 \&\& is\+Signed )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba03a807ceb2bd240c140bd4536aca7ff7}{is\+Uint16}} = ( sizeof(T) == 2 \&\& !is\+Signed )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baa6c52a118c68fc4ae97b03b306bbef01}{is\+Int32}} = ( sizeof(T) == 4 \&\& is\+Signed )
+, \newline
+\mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba9be2a364bfb7e1022222f96e1da54200}{is\+Uint32}} = ( sizeof(T) == 4 \&\& !is\+Signed )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baa11426f769c60f00f77f58ff2a4ad2f8}{is\+Int64}} = ( sizeof(T) == 8 \&\& is\+Signed )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532bae772e27ced6aa89bec2f64ef376cca27}{is\+Uint64}} = ( sizeof(T) == 8 \&\& !is\+Signed )
+, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baf67bbff4eb55b97cc3f85b13a200bcca}{bit\+Count}} = ( sizeof(T)$\ast$8 )
+, \newline
+\mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1343d2974ad0890171ab2af9e0ac4dbf}{is\+Bool}} = ( (T)2 == (T)1 )
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_int_traits_ab42ee4a1abe8720e62cf389bcb0dd474}{C\+\_\+\+ASSERT}} (\mbox{\hyperlink{class_numeric_type}{Numeric\+Type}}$<$ T $>$\+::is\+Int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const T \mbox{\hyperlink{class_int_traits_ac0a281193f775174407e4c3840040b36}{max\+Int}} = static\+\_\+cast$<$T$>$(\mbox{\hyperlink{class_safe_int_min_max}{Safe\+Int\+Min\+Max}}$<$ \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1c7362dced97f3e172bca532098c2e82}{is\+Signed}}, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baf67bbff4eb55b97cc3f85b13a200bcca}{bit\+Count}} $>$\+::max)
+\item 
+static const T \mbox{\hyperlink{class_int_traits_a84ebe15abef2b05b8f594ac9c358423e}{min\+Int}} = static\+\_\+cast$<$T$>$(\mbox{\hyperlink{class_safe_int_min_max}{Safe\+Int\+Min\+Max}}$<$ \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1c7362dced97f3e172bca532098c2e82}{is\+Signed}}, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baf67bbff4eb55b97cc3f85b13a200bcca}{bit\+Count}} $>$\+::min)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Int\+Traits$<$ T $>$}
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l00898}{898}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532b}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532b}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isSigned@{isSigned}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isSigned@{isSigned}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1c7362dced97f3e172bca532098c2e82}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1c7362dced97f3e172bca532098c2e82}} 
+is\+Signed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is64Bit@{is64Bit}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!is64Bit@{is64Bit}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba7df074c5bbec3906a2928ef3c5524dbd}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba7df074c5bbec3906a2928ef3c5524dbd}} 
+is64\+Bit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is32Bit@{is32Bit}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!is32Bit@{is32Bit}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1e59e843b997443e18eb34e64d2da82f}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1e59e843b997443e18eb34e64d2da82f}} 
+is32\+Bit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is16Bit@{is16Bit}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!is16Bit@{is16Bit}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba7320d43b212f6ad4bb60ed4d9081b649}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba7320d43b212f6ad4bb60ed4d9081b649}} 
+is16\+Bit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{is8Bit@{is8Bit}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!is8Bit@{is8Bit}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532bac35e0c8c90a40aa8c888a928c6d28a5e}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532bac35e0c8c90a40aa8c888a928c6d28a5e}} 
+is8\+Bit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isLT32Bit@{isLT32Bit}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isLT32Bit@{isLT32Bit}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba5514435151a1ad8ea8d2341c5e7795b8}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba5514435151a1ad8ea8d2341c5e7795b8}} 
+is\+LT32\+Bit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isLT64Bit@{isLT64Bit}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isLT64Bit@{isLT64Bit}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba89f70c20fd7b58f86d0c37037a2339c8}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba89f70c20fd7b58f86d0c37037a2339c8}} 
+is\+LT64\+Bit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isInt8@{isInt8}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isInt8@{isInt8}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba4cf69a7a7779641d4ba56020fc77e069}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba4cf69a7a7779641d4ba56020fc77e069}} 
+is\+Int8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isUint8@{isUint8}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isUint8@{isUint8}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba72f6b0121a25b95467492f8d255ead2b}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba72f6b0121a25b95467492f8d255ead2b}} 
+is\+Uint8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isInt16@{isInt16}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isInt16@{isInt16}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba059051bc3e0826e9f9293c8d3d382c55}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba059051bc3e0826e9f9293c8d3d382c55}} 
+is\+Int16&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isUint16@{isUint16}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isUint16@{isUint16}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba03a807ceb2bd240c140bd4536aca7ff7}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba03a807ceb2bd240c140bd4536aca7ff7}} 
+is\+Uint16&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isInt32@{isInt32}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isInt32@{isInt32}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baa6c52a118c68fc4ae97b03b306bbef01}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baa6c52a118c68fc4ae97b03b306bbef01}} 
+is\+Int32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isUint32@{isUint32}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isUint32@{isUint32}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba9be2a364bfb7e1022222f96e1da54200}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba9be2a364bfb7e1022222f96e1da54200}} 
+is\+Uint32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isInt64@{isInt64}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isInt64@{isInt64}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baa11426f769c60f00f77f58ff2a4ad2f8}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baa11426f769c60f00f77f58ff2a4ad2f8}} 
+is\+Int64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isUint64@{isUint64}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isUint64@{isUint64}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532bae772e27ced6aa89bec2f64ef376cca27}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532bae772e27ced6aa89bec2f64ef376cca27}} 
+is\+Uint64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bitCount@{bitCount}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!bitCount@{bitCount}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baf67bbff4eb55b97cc3f85b13a200bcca}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baf67bbff4eb55b97cc3f85b13a200bcca}} 
+bit\+Count&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isBool@{isBool}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!isBool@{isBool}}}\mbox{\Hypertarget{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1343d2974ad0890171ab2af9e0ac4dbf}\label{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1343d2974ad0890171ab2af9e0ac4dbf}} 
+is\+Bool&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l00902}{902}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_int_traits_ab42ee4a1abe8720e62cf389bcb0dd474}\label{class_int_traits_ab42ee4a1abe8720e62cf389bcb0dd474}} 
+\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!C\_ASSERT@{C\_ASSERT}}
+\index{C\_ASSERT@{C\_ASSERT}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{C\_ASSERT()}{C\_ASSERT()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_int_traits}{Int\+Traits}}$<$ T $>$\+::\+C\+\_\+\+ASSERT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_numeric_type}{Numeric\+Type}}$<$ T $>$\+::is\+Int}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_int_traits_ac0a281193f775174407e4c3840040b36}\label{class_int_traits_ac0a281193f775174407e4c3840040b36}} 
+\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!maxInt@{maxInt}}
+\index{maxInt@{maxInt}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{maxInt}{maxInt}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \mbox{\hyperlink{class_int_traits}{Int\+Traits}}$<$ T $>$\+::max\+Int = static\+\_\+cast$<$T$>$(\mbox{\hyperlink{class_safe_int_min_max}{Safe\+Int\+Min\+Max}}$<$ \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1c7362dced97f3e172bca532098c2e82}{is\+Signed}}, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baf67bbff4eb55b97cc3f85b13a200bcca}{bit\+Count}} $>$\+::max)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l00926}{926}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+\mbox{\Hypertarget{class_int_traits_a84ebe15abef2b05b8f594ac9c358423e}\label{class_int_traits_a84ebe15abef2b05b8f594ac9c358423e}} 
+\index{IntTraits$<$ T $>$@{IntTraits$<$ T $>$}!minInt@{minInt}}
+\index{minInt@{minInt}!IntTraits$<$ T $>$@{IntTraits$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{minInt}{minInt}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \mbox{\hyperlink{class_int_traits}{Int\+Traits}}$<$ T $>$\+::min\+Int = static\+\_\+cast$<$T$>$(\mbox{\hyperlink{class_safe_int_min_max}{Safe\+Int\+Min\+Max}}$<$ \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532ba1c7362dced97f3e172bca532098c2e82}{is\+Signed}}, \mbox{\hyperlink{class_int_traits_a98c308e7ddb3be3f72309fc3f570532baf67bbff4eb55b97cc3f85b13a200bcca}{bit\+Count}} $>$\+::min)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l00927}{927}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_safe_int_8h}{Safe\+Int.\+h}}\end{DoxyCompactItemize}

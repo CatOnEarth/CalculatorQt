@@ -1,0 +1,59 @@
+\hypertarget{cutexpression_8h_source}{}\doxysection{cutexpression.\+h}
+\mbox{\hyperlink{cutexpression_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef CUTEXPRESSION\_H}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00002}00002 \textcolor{preprocessor}{\#define CUTEXPRESSION\_H}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00004}00004 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <\mbox{\hyperlink{stack__qstring_8h}{stack\_qstring.h}}>}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <set>}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00011}\mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7}{00011}} \textcolor{keyword}{enum} \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} \{}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00012}\mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a13d000b4d7dc70d90239b7430d1eb6b2}{00012}}     \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a13d000b4d7dc70d90239b7430d1eb6b2}{START}},}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00013}\mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a12a90dfe20486bbe3e075afcd19ef2d0}{00013}}     \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a12a90dfe20486bbe3e075afcd19ef2d0}{NUMBER}},}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00014}\mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a682bff09ecd13e855c20beeea7f234f8}{00014}}     \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a682bff09ecd13e855c20beeea7f234f8}{SIGN}},}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00015}\mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a0e0143636c29971736eab47415868eae}{00015}}     \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a0e0143636c29971736eab47415868eae}{OPEN}},}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00016}\mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a685f73194ad125cbc784c3210cdb3449}{00016}}     \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a685f73194ad125cbc784c3210cdb3449}{CLOSE}},}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00017}\mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a389e03ce61ac2d93fd54069187ab58af}{00017}}     \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a389e03ce61ac2d93fd54069187ab58af}{FUNC}},}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00018}\mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7ae1a4172270fda30509845152801baf72}{00018}}     \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7ae1a4172270fda30509845152801baf72}{SEMILICON}},}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00019}00019     \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a3d044162d972156d897cea80f216b9ca}{CONST}}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00020}\mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7a3d044162d972156d897cea80f216b9ca}{00020}} \};}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00022}\mbox{\hyperlink{classcutexpression}{00022}} \textcolor{keyword}{class }\mbox{\hyperlink{classcutexpression}{cutexpression}}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00023}00023 \{}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00024}00024 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00025}00025     \mbox{\hyperlink{classcutexpression_a6b41eef876ba59a1abb0ee0926dea97e}{cutexpression}}(QString);}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00027}00027     \mbox{\hyperlink{classcutexpression_a71e4b02bbc2f620542f0ad0297170aeb}{\string~cutexpression}}();}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00029}00029     \textcolor{keywordtype}{void} \mbox{\hyperlink{classcutexpression_a5988ebeaf3705f5bbb56cf799efeb073}{inizialize\_priority}}();}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00031}00031     \textcolor{keywordtype}{void} \mbox{\hyperlink{classcutexpression_a4a262e053e3000c850165e78fef98181}{create\_postfix\_expression}}();}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00033}\mbox{\hyperlink{classcutexpression_af9bcad3bd8b16d3c74866e2591cafc65}{00033}}     QString \mbox{\hyperlink{classcutexpression_af9bcad3bd8b16d3c74866e2591cafc65}{getPostfixExpression}}() \{\textcolor{keywordflow}{return} postfix\_expression;\}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00035}\mbox{\hyperlink{classcutexpression_a8e52524836607d285f5ba7d72d5bae01}{00035}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classcutexpression_a8e52524836607d285f5ba7d72d5bae01}{find\_end\_sin\_cos}}(\textcolor{keywordtype}{int} \&, \mbox{\hyperlink{cutexpression_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}\&);}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00037}\mbox{\hyperlink{classcutexpression_ab1c6108093d1915e313da3efca796236}{00037}}     \mbox{\hyperlink{classstack__qstring}{stack\_qstring}} \mbox{\hyperlink{classcutexpression_ab1c6108093d1915e313da3efca796236}{getStackPostfixExpression}}() \{ \textcolor{keywordflow}{return} stack\_postfix\_expression; \}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00039}\mbox{\hyperlink{classcutexpression_a0b94f52f954fd3005f08ec32d3e968c4}{00039}}     vector<QString> \mbox{\hyperlink{classcutexpression_a0b94f52f954fd3005f08ec32d3e968c4}{getParams}}() \{ \textcolor{keywordflow}{return} parametrs; \}}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00042}00042 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00044}00044     QString start\_expression;}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00045}00045     QString postfix\_expression;}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00046}00046     map<QString, int> priority\_operations;}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00047}00047     set<QString> operations;}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00048}00048     set<QString> CONSTANTS;}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00049}00049     vector<QString> parametrs;}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00051}00051     \mbox{\hyperlink{classstack__qstring}{stack\_qstring}} stack\_postfix\_expression;}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00052}00052 \};}
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{cutexpression_8h_source_l00054}00054 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CUTEXPRESSION\_H}}
+
+\end{DoxyCode}

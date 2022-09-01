@@ -1,0 +1,71 @@
+\hypertarget{class_safe_int_compare}{}\doxysection{Safe\+Int\+Compare\texorpdfstring{$<$}{<} T, U \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_safe_int_compare}\index{SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}}
+
+
+{\ttfamily \#include $<$Safe\+Int.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a0766916dfcbd93af2ba2e7193b1f18af}{is\+Both\+Signed}} = (Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Signed \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Signed)
+, \mbox{\hyperlink{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a6e873398740655551db38bf570ee9ffa}{is\+Both\+Unsigned}} = (!\+Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Signed \&\& !\+Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Signed)
+, \mbox{\hyperlink{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978ae434bda79a169729e84e65eba5c643b6}{is\+Like\+Signed}} = ((bool)(Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+Signed) == (bool)(Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+Signed))
+, \mbox{\hyperlink{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a06232cc620a9701ab7cd1b1f1f68f08b}{is\+Cast\+OK}}
+, \newline
+\mbox{\hyperlink{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a0697b2d0c9356d1f5d2b68e3ce380869}{is\+Both\+LT32\+Bit}} = (Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT32\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+LT32\+Bit)
+, \mbox{\hyperlink{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978af33b0fe91eb79af263b5d1ebba2883cf}{is\+Both\+LT64\+Bit}} = (Int\+Traits\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit \&\& Int\+Traits\texorpdfstring{$<$}{<} U \texorpdfstring{$>$}{>}\+::is\+LT64\+Bit)
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename U$>$\newline
+class Safe\+Int\+Compare$<$ T, U $>$}
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l00935}{935}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978}\label{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$typename T , typename U $>$ \\
+anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isBothSigned@{isBothSigned}!SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}}\index{SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}!isBothSigned@{isBothSigned}}}\mbox{\Hypertarget{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a0766916dfcbd93af2ba2e7193b1f18af}\label{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a0766916dfcbd93af2ba2e7193b1f18af}} 
+is\+Both\+Signed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isBothUnsigned@{isBothUnsigned}!SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}}\index{SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}!isBothUnsigned@{isBothUnsigned}}}\mbox{\Hypertarget{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a6e873398740655551db38bf570ee9ffa}\label{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a6e873398740655551db38bf570ee9ffa}} 
+is\+Both\+Unsigned&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isLikeSigned@{isLikeSigned}!SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}}\index{SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}!isLikeSigned@{isLikeSigned}}}\mbox{\Hypertarget{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978ae434bda79a169729e84e65eba5c643b6}\label{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978ae434bda79a169729e84e65eba5c643b6}} 
+is\+Like\+Signed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isCastOK@{isCastOK}!SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}}\index{SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}!isCastOK@{isCastOK}}}\mbox{\Hypertarget{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a06232cc620a9701ab7cd1b1f1f68f08b}\label{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a06232cc620a9701ab7cd1b1f1f68f08b}} 
+is\+Cast\+OK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isBothLT32Bit@{isBothLT32Bit}!SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}}\index{SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}!isBothLT32Bit@{isBothLT32Bit}}}\mbox{\Hypertarget{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a0697b2d0c9356d1f5d2b68e3ce380869}\label{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978a0697b2d0c9356d1f5d2b68e3ce380869}} 
+is\+Both\+LT32\+Bit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{isBothLT64Bit@{isBothLT64Bit}!SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}}\index{SafeIntCompare$<$ T, U $>$@{SafeIntCompare$<$ T, U $>$}!isBothLT64Bit@{isBothLT64Bit}}}\mbox{\Hypertarget{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978af33b0fe91eb79af263b5d1ebba2883cf}\label{class_safe_int_compare_af05aa3d80ddd0674e81fd5fa18084978af33b0fe91eb79af263b5d1ebba2883cf}} 
+is\+Both\+LT64\+Bit&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_safe_int_8h_source_l00938}{938}} of file \mbox{\hyperlink{_safe_int_8h_source}{Safe\+Int.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_safe_int_8h}{Safe\+Int.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{stack__qstring_8cpp_source}{}\doxysection{stack\+\_\+qstring.\+cpp}
+\mbox{\hyperlink{stack__qstring_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{stack__qstring_8h}{stack\_qstring.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00003}\mbox{\hyperlink{classstack__qstring_aac500d89b2c426a8efa5ebfb09470165}{00003}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstack__qstring_aac500d89b2c426a8efa5ebfb09470165}{stack\_qstring::push}}(QString newElem) \{}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00004}00004     elem = \textcolor{keyword}{new} \mbox{\hyperlink{structnode}{node}}(newElem, elem);}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00005}00005     \_size++;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00008}\mbox{\hyperlink{classstack__qstring_ace962be2acc19634a16f86b26840f013}{00008}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classstack__qstring_ace962be2acc19634a16f86b26840f013}{stack\_qstring::empty}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00009}00009     \textcolor{keywordflow}{return} \_size == 0;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00010}00010 \}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00012}\mbox{\hyperlink{classstack__qstring_ac7d9d5f427f28b6ba3862852f55b2506}{00012}} QString \mbox{\hyperlink{classstack__qstring_ac7d9d5f427f28b6ba3862852f55b2506}{stack\_qstring::pop}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00013}00013     \mbox{\hyperlink{structnode}{node}}* prev = elem-\/>prev;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00014}00014     QString elemVal = elem-\/>value;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00015}00015     \textcolor{keyword}{delete} elem;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00016}00016     elem = prev;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00017}00017     -\/-\/\_size;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00018}00018     \textcolor{keywordflow}{return} elemVal;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00021}\mbox{\hyperlink{classstack__qstring_ac55a455ecfdc5458aa0f2e19c498bfb9}{00021}} QString \mbox{\hyperlink{classstack__qstring_ac55a455ecfdc5458aa0f2e19c498bfb9}{stack\_qstring::back}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00022}00022     \textcolor{keywordflow}{return} elem-\/>value;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00025}\mbox{\hyperlink{classstack__qstring_a2b9769b3aff37dd662b55a08a86326e0}{00025}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classstack__qstring_a2b9769b3aff37dd662b55a08a86326e0}{stack\_qstring::size}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00026}00026     \textcolor{keywordflow}{return} \_size;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00029}\mbox{\hyperlink{classstack__qstring_ad179d3f1342f0b84c20064a8f68054e9}{00029}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstack__qstring_ad179d3f1342f0b84c20064a8f68054e9}{stack\_qstring::clear}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00030}00030     \textcolor{keywordflow}{while} (!\mbox{\hyperlink{classstack__qstring_ace962be2acc19634a16f86b26840f013}{empty}}()) \{}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00031}00031         \mbox{\hyperlink{classstack__qstring_ac7d9d5f427f28b6ba3862852f55b2506}{pop}}();}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00033}00033 \}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00035}\mbox{\hyperlink{classstack__qstring_a27c02cf20893a1b7ccf4922a3a4cf897}{00035}} vector<QString> \mbox{\hyperlink{classstack__qstring_a27c02cf20893a1b7ccf4922a3a4cf897}{stack\_qstring::getVectorArray}}() \{}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00036}00036     vector<QString> ans;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00037}00037     \mbox{\hyperlink{structnode}{node}}* tmp\_elem = elem;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00038}00038     \textcolor{keywordflow}{while} (tmp\_elem != NULL) \{}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00039}00039         ans.push\_back(tmp\_elem-\/>value);}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00040}00040         tmp\_elem = tmp\_elem-\/>prev;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00043}00043     \textcolor{keyword}{delete} tmp\_elem;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00045}00045    \textcolor{comment}{// reverse(ans.begin(), ans.end());}}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00046}00046     \textcolor{keywordflow}{return} ans;}
+\DoxyCodeLine{\Hypertarget{stack__qstring_8cpp_source_l00047}00047 \}}
+
+\end{DoxyCode}

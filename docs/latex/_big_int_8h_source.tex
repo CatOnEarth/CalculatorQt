@@ -1,0 +1,80 @@
+\hypertarget{_big_int_8h_source}{}\doxysection{Big\+Int.\+h}
+\mbox{\hyperlink{_big_int_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef BIG\_INT\_H}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00002}00002 \textcolor{preprocessor}{\#define BIG\_INT\_H}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00009}\mbox{\hyperlink{class_big_int}{00009}} \textcolor{keyword}{class }\mbox{\hyperlink{class_big_int}{BigInt}} \{}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00010}00010     std::string value;}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00011}00011     \textcolor{keywordtype}{bool} isNeg; }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00013}00013     \textcolor{keyword}{static} \mbox{\hyperlink{class_big_int}{BigInt}} karatsuba\_mul(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&a, \textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&b);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00015}00015 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00016}00016     \mbox{\hyperlink{class_big_int_af677021c0987fc2a48da06837ed29c58}{BigInt}}(); \textcolor{comment}{// конструктор}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00017}00017     \mbox{\hyperlink{class_big_int_af677021c0987fc2a48da06837ed29c58}{BigInt}}(\textcolor{keywordtype}{long} x);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00018}00018     \mbox{\hyperlink{class_big_int_af677021c0987fc2a48da06837ed29c58}{BigInt}}(\textcolor{keyword}{const} std::string \&value);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00019}00019     \mbox{\hyperlink{class_big_int_af677021c0987fc2a48da06837ed29c58}{BigInt}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}}\& bigInt);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00021}00021     \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{class_big_int_a463a70984ff63770c9c695cfa609e0a1}{getValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00023}00023     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_big_int_ac026f1f09b00e09548181fb1d997ce1b}{getIsNeg}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00024}00024     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_big_int_a235e3e0cc5472c4c664f46ba44a02863}{setIsNeg}}(\textcolor{keywordtype}{bool} isNeg);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00026}00026     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_big_int_a9d6be1e13f85a4b7cc8ad849b42c9e3b}{sign}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00027}00027     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_big_int_a3bf1b0d63198730c7f80ab01a69f1f08}{isEven}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00029}00029     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_af7187eaa976be104fe1394184b6809b9}{abs}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00030}00030     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a826cc68c28554dd220174bd6624ce4a5}{pow}}(\textcolor{keywordtype}{long} n) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00032}00032     \textcolor{comment}{// операции сравнения}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00033}00033     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_big_int_aac495abae7e684612e13595d8c42e2b4}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00034}00034     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_big_int_ad9c0c838396ace903658853396362af4}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00036}00036     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_big_int_ab884b1817d600aaebbc8285f73bbb81f}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00037}00037     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_big_int_ab643afe3c1cca55082253a8e75a9bc10}{operator>}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00038}00038     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_big_int_a1338ed0fb5c4e9841ad2be4a098d369d}{operator<=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00039}00039     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_big_int_a95deae18b277977f0cc08bfeee8311f6}{operator>=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00041}00041     \textcolor{comment}{// операция присваивания}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00042}00042     \mbox{\hyperlink{class_big_int}{BigInt}} \&\mbox{\hyperlink{class_big_int_ab3898e0c8f4772f037886746f9db0266}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00044}00044     \textcolor{comment}{// унарные плюс и минус}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00045}00045     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a5fc34adba77a103b774298306273280f}{operator+}}() \textcolor{keyword}{const} \&\&;}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00046}00046     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a30c44e9c181129839dccf968a6878826}{operator-\/}}() \textcolor{keyword}{const} \&\&;}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00048}00048     \textcolor{comment}{// арифметические операции}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00049}00049     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a5fc34adba77a103b774298306273280f}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00050}00050     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a30c44e9c181129839dccf968a6878826}{operator-\/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00051}00051     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a6923e4051056550f9ee2a300c44bf244}{operator*}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00052}00052     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_afb395fa5909c4959740675eff3833a02}{operator/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00053}00053     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a8bb8809938d78ab0731d28d104c219e5}{operator\%}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00055}00055     \textcolor{comment}{// краткая форма операций}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00056}00056     \mbox{\hyperlink{class_big_int}{BigInt}} \&\mbox{\hyperlink{class_big_int_a6e5057f2f6f20b49eed46620379bd098}{operator+=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00057}00057     \mbox{\hyperlink{class_big_int}{BigInt}} \&\mbox{\hyperlink{class_big_int_acfd9235d2c1422eb50b9a1d951a09637}{operator-\/=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00058}00058     \mbox{\hyperlink{class_big_int}{BigInt}} \&\mbox{\hyperlink{class_big_int_a68c414d2dc77982aadd2c28ac9f8d568}{operator*=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00059}00059     \mbox{\hyperlink{class_big_int}{BigInt}} \&\mbox{\hyperlink{class_big_int_a848e9f744f7975de6a10ff1776cf00e7}{operator/=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00060}00060     \mbox{\hyperlink{class_big_int}{BigInt}} \&\mbox{\hyperlink{class_big_int_a4f333ca45992447efc27e9b273d833d9}{operator\%=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_big_int}{BigInt}} \&bigInt);}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00062}00062     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a8245ef6b58789c6fff5afe554979c583}{operator<<}}(\textcolor{keywordtype}{size\_t} n) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00063}00063     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a1b41af92e4b65aadf06d7747d3defbbe}{operator>>}}(\textcolor{keywordtype}{size\_t} n) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00065}00065     \textcolor{comment}{// префиксная форма}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00066}00066     \mbox{\hyperlink{class_big_int}{BigInt}} \&\mbox{\hyperlink{class_big_int_a0f1a8a43867f25c8df48e7747012536f}{operator++}}(); \textcolor{comment}{// ++ii}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00067}00067     \mbox{\hyperlink{class_big_int}{BigInt}} \&\mbox{\hyperlink{class_big_int_aed992537fac59f8c794fc24d10baf199}{operator-\/-\/}}(); \textcolor{comment}{// -\/-\/ii}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00069}00069     \textcolor{comment}{// постфиксная форма}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00070}00070     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_a0f1a8a43867f25c8df48e7747012536f}{operator++}}(\textcolor{keywordtype}{int}); \textcolor{comment}{// ii++}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00071}00071     \mbox{\hyperlink{class_big_int}{BigInt}} \mbox{\hyperlink{class_big_int_aed992537fac59f8c794fc24d10baf199}{operator-\/-\/}}(\textcolor{keywordtype}{int}); \textcolor{comment}{// ii-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00073}00073 \};}
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{_big_int_8h_source_l00075}00075 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

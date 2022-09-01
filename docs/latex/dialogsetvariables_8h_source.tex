@@ -1,0 +1,37 @@
+\hypertarget{dialogsetvariables_8h_source}{}\doxysection{dialogsetvariables.\+h}
+\mbox{\hyperlink{dialogsetvariables_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef DIALOGSETVARIABLES\_H}}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00002}00002 \textcolor{preprocessor}{\#define DIALOGSETVARIABLES\_H}}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <QFormLayout>}}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00010}00010 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00011}00011 \textcolor{keyword}{class }\mbox{\hyperlink{class_dialog_set_variables}{DialogSetVariables}};}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00012}00012 \}}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00014}\mbox{\hyperlink{class_dialog_set_variables}{00014}} \textcolor{keyword}{class }\mbox{\hyperlink{class_dialog_set_variables}{DialogSetVariables}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00015}00015 \{}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00016}00016     Q\_OBJECT}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00017}00017     QFormLayout* flowLayout = \textcolor{keyword}{new} QFormLayout;}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00019}00019 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00020}00020     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_dialog_set_variables_aa14e9bd98803f0399a279929f85fb0dc}{DialogSetVariables}}(\textcolor{keyword}{const} std::vector<QString>\& data, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00021}00021     \mbox{\hyperlink{class_dialog_set_variables_a96b2ba1241d1c1f07fa2973aca5a5a6e}{\string~DialogSetVariables}}();}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00022}00022     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_dialog_set_variables_a0b4a80f56c437ce3260e09a25392c330}{add\_textview}}(\textcolor{keyword}{const} std::vector<QString>\&);}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00023}00023     std::vector<QString> \mbox{\hyperlink{class_dialog_set_variables_a2dd87fe66a9c8bfea2d68698a0719b4d}{getNumbers}}();}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00025}00025 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00026}00026     \textcolor{keywordtype}{void} check\_input\_number(QString\&);}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00027}00027     \mbox{\hyperlink{class_ui_1_1_dialog_set_variables}{Ui::DialogSetVariables}} *ui;}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00028}00028     std::vector<QString> data\_;}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00030}00030 \};}
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{dialogsetvariables_8h_source_l00032}00032 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DIALOGSETVARIABLES\_H}}
+
+\end{DoxyCode}
