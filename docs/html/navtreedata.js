@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "CalculatorQt", "index.html", [
+    [ "CalculatorQt", "md__r_e_a_d_m_e.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
